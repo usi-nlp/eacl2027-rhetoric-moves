@@ -1,0 +1,18 @@
+# Optional requirements, needed only for the steps that start from the article
+# PDFs or that host the human studies. None of them is needed to reproduce the
+# paper's numbers from data/master_dataset.json.
+
+# --- PDF preprocessing (data_processing/) -------------------------------------
+docling                  # PDF-to-text conversion (pulls in PyTorch)
+lxml                     # XML parsing of the source annotation files
+label-studio-converter   # Label Studio import format for the gold annotations
+flask                    # citation_review_app.py, the manual citation check UI
+# GROBID runs as a separate service, see the README (Docker image grobid/grobid).
+
+# --- serving the open-weight generators (intro_generation/) -------------------
+# vllm                   # install on the GPU machine that serves Gemma / Qwen
+
+# --- human-study hosting (discrimination_experiment/) -------------------------
+label-studio             # the interface the detection study was run in
+argilla                  # alternative interface (build_argilla_datasets.py)
+huggingface_hub          # build_static_ui.py --push

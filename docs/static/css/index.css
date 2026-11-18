@@ -1,0 +1,1270 @@
+/*
+ * Project page styles. Layout and class names follow the Academic Project Page
+ * Template (https://github.com/eliahuhorwitz/Academic-project-page-template,
+ * CC BY-SA 4.0). Colours follow the figures of the paper: purple for Move 1,
+ * magenta for Move 2, blue for Move 3.
+ */
+
+:root {
+  color-scheme: light;
+
+  /* ink and surfaces */
+  --text-primary: #1f1b2d;
+  --text-secondary: #55516a;
+  --text-muted: #6f6b85;
+  --surface: #ffffff;
+  --surface-soft: #f8f6fc;
+  --surface-softer: #f0ebf8;
+  --border: #e4dff0;
+  --grid: #ece8f4;
+
+  /* accent (headings of the paper's framework figure) */
+  --accent: #6b21a8;
+  --accent-hover: #581c87;
+
+  /* chart marks: one hue per move. Validated on white for all pairs:
+     worst colour-vision-deficiency distance 17.5, normal vision 24.8,
+     contrast against the surface at least 3.4:1 */
+  --move-1: #7c22a6;
+  --move-2: #e64980;
+  --move-3: #3d8bf2;
+
+  /* text highlights: the step tints of the paper's Figure 1 */
+  --m1-cc: #d99efd;
+  --m1-mtg: #e6c0fe;
+  --m1-rr: #f3e2fe;
+  --m2-gap: #fd9ac6;
+  --m2-qr: #fec5dc;
+  --m2-ct: #fee5ef;
+  --m3-apr: #789cf4;
+  --m3-op: #9fbcfd;
+  --m3-apf: #c4d6fe;
+  --m3-is: #e5edfe;
+
+  --radius: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px rgb(31 27 45 / 0.06);
+  --shadow-md: 0 4px 12px -2px rgb(31 27 45 / 0.10);
+  --font: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--surface);
+}
+
+body {
+  font-family: var(--font);
+  color: var(--text-primary);
+  background: var(--surface);
+  line-height: 1.6;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible,
+summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+strong {
+  color: inherit;
+}
+
+.icon-sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.icon-svg {
+  width: 1.1em;
+  height: 1.1em;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex: none;
+}
+
+/* ------------------------------------------------------------------ sections */
+
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.section.is-soft {
+  background: var(--surface-soft);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.hero-body {
+  padding: 4rem 1.5rem 2rem;
+}
+
+.title,
+.subtitle {
+  font-family: var(--font);
+  color: var(--text-primary);
+}
+
+.title.is-3 {
+  font-weight: 750;
+  letter-spacing: -0.01em;
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+/* three short rules under each section heading: the three moves */
+.title.is-3::after {
+  content: "";
+  display: block;
+  width: 72px;
+  height: 4px;
+  margin: 0.9rem auto 0;
+  border-radius: 2px;
+  background: linear-gradient(
+    to right,
+    var(--move-1) 0 22px,
+    transparent 22px 25px,
+    var(--move-2) 25px 47px,
+    transparent 47px 50px,
+    var(--move-3) 50px 72px
+  );
+}
+
+.title.is-5 {
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.lead {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 46rem;
+  margin: 0 auto 2.5rem;
+}
+
+.content p {
+  color: var(--text-primary);
+}
+
+.content.has-text-justified p {
+  font-size: 1.0625rem;
+  line-height: 1.75;
+}
+
+/* ---------------------------------------------------------------------- hero */
+
+.publication-title {
+  font-weight: 800 !important;
+  line-height: 1.12 !important;
+  letter-spacing: -0.02em;
+  color: var(--text-primary) !important;
+  margin-bottom: 0.75rem !important;
+  text-wrap: balance;
+}
+
+.publication-subtitle {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--text-secondary);
+  margin-bottom: 1.75rem;
+  text-wrap: balance;
+}
+
+.publication-authors {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.publication-authors a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+.publication-authors a:hover {
+  border-bottom-color: currentColor;
+}
+
+.author-block {
+  display: inline-block;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.publication-affiliation {
+  color: var(--text-secondary);
+  font-size: 1.05rem;
+  margin-top: 0.35rem;
+}
+
+.publication-affiliation a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--border);
+  text-underline-offset: 3px;
+}
+
+.publication-venue {
+  display: inline-block;
+  margin-top: 1.1rem;
+  padding: 0.3rem 0.95rem;
+  border-radius: 999px;
+  background: var(--surface-softer);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.publication-links {
+  margin-top: 1.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.6rem;
+}
+
+.button.is-dark {
+  background: var(--text-primary) !important;
+  color: #ffffff !important;
+  border: none !important;
+  font-weight: 600;
+  gap: 0.5rem;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+  box-shadow: var(--shadow-sm);
+  transition: background-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button.is-dark:hover {
+  background: var(--accent) !important;
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-md);
+}
+
+/* -------------------------------------------------------------------- figures */
+
+.figure-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  margin: 0;
+}
+
+.figure-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.figure-card figcaption,
+.caption {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-top: 0.9rem;
+  text-align: left;
+}
+
+.teaser {
+  padding-top: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+/* figures that open at full size: the link must not add inline spacing */
+.figure-card a {
+  display: block;
+}
+
+/* ----------------------------------------------------------------- stat tiles */
+
+.stat-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+}
+
+.stat-tile {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1rem 1.15rem;
+  text-align: left;
+}
+
+.stat-tile .stat-value {
+  display: block;
+  font-size: 2.1rem;
+  font-weight: 650;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text-primary);
+}
+
+.stat-tile .stat-label {
+  display: block;
+  margin-top: 0.45rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
+
+/* ------------------------------------------------------------------ CARS model */
+
+.move-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.move-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.1rem 1.2rem;
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.move-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--move-colour);
+}
+
+.move-card.is-m1 { --move-colour: var(--move-1); }
+.move-card.is-m2 { --move-colour: var(--move-2); }
+.move-card.is-m3 { --move-colour: var(--move-3); }
+
+.move-card .move-kicker {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.move-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 0.1rem 0 0.35rem;
+  color: var(--text-primary);
+}
+
+.move-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.8rem;
+}
+
+.step-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.step-chip {
+  display: inline-block;
+  padding: 0.12rem 0.5rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  background: var(--chip);
+}
+
+.step-chip abbr {
+  font-weight: 700;
+  text-decoration: none;
+  margin-right: 0.3rem;
+}
+
+/* --------------------------------------------------------------- method cards */
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  counter-reset: step;
+}
+
+.step-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.2rem 1.3rem;
+  text-align: left;
+}
+
+.step-card::before {
+  counter-increment: step;
+  content: counter(step);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--surface-softer);
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+}
+
+.step-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+  color: var(--text-primary);
+}
+
+.step-card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+/* -------------------------------------------------------------------- findings */
+
+.finding {
+  text-align: left;
+  margin-top: 3.25rem;
+}
+
+.finding:first-of-type {
+  margin-top: 0;
+}
+
+.finding h3 {
+  font-size: 1.4rem;
+  font-weight: 750;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.6rem;
+  color: var(--text-primary);
+}
+
+.finding > p {
+  color: var(--text-secondary);
+  font-size: 1.03rem;
+  max-width: 48rem;
+  margin-bottom: 1.25rem;
+}
+
+.finding > p strong {
+  color: var(--text-primary);
+}
+
+.chart-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem 1.25rem 1.1rem;
+}
+
+.chart-title {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.15rem;
+}
+
+.chart-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+}
+
+.chart-note {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.85rem;
+}
+
+/* legend: a swatch beside a name, never coloured text */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem 1.1rem;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.swatch {
+  width: 12px;
+  height: 12px;
+  border-radius: 3px;
+  flex: none;
+}
+
+.swatch.is-m1, .seg.is-m1, .unit.is-m1 { background: var(--move-1); }
+.swatch.is-m2, .seg.is-m2, .unit.is-m2 { background: var(--move-2); }
+.swatch.is-m3, .seg.is-m3, .unit.is-m3 { background: var(--move-3); }
+
+/* tables */
+.table-wrap {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+table.data {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.925rem;
+  color: var(--text-primary);
+  background: transparent;
+}
+
+table.data th,
+table.data td {
+  padding: 0.5rem 0.85rem 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--grid);
+  text-align: right;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+table.data thead th {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border);
+}
+
+table.data th:first-child,
+table.data td:first-child {
+  text-align: left;
+}
+
+table.data td.is-text,
+table.data th.is-text {
+  text-align: left;
+}
+
+/* "before -> after" cells: the arrows line up down the column */
+table.data .pair-cell {
+  text-align: center;
+}
+
+table.data .pair {
+  display: inline-grid;
+  grid-template-columns: 2.6em 1.6em 2.6em;
+  font-variant-numeric: tabular-nums;
+}
+
+table.data .pair > span:first-child {
+  text-align: right;
+}
+
+table.data .pair > span:last-child {
+  text-align: left;
+}
+
+table.data .arrow {
+  text-align: center;
+  color: var(--text-muted);
+}
+
+table.data td.num {
+  font-variant-numeric: tabular-nums;
+}
+
+table.data tbody tr:last-child td,
+table.data tbody tr:last-child th {
+  border-bottom: none;
+}
+
+table.data tr.is-reference td,
+table.data tr.is-reference th {
+  background: var(--surface-soft);
+  font-weight: 600;
+}
+
+table.data tbody th {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+table.data .sub {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+table.data .sig {
+  display: inline-block;
+  width: 0;
+  overflow: visible;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* thin segmented bar: one whole split into the three moves, no text inside.
+   The figures sit in the table cells beside it. */
+td.bar-cell {
+  width: 38%;
+  min-width: 150px;
+}
+
+.segbar {
+  display: flex;
+  gap: 2px;
+  height: 8px;
+  width: 100%;
+}
+
+.segbar .seg {
+  height: 100%;
+  min-width: 2px;
+}
+
+.segbar .seg:first-child { border-radius: 4px 0 0 4px; }
+.segbar .seg:last-child { border-radius: 0 4px 4px 0; }
+
+/* meter list: one ratio per named row, bars aligned */
+.meter-list {
+  display: grid;
+  gap: 0.7rem;
+  font-size: 0.95rem;
+}
+
+.meter-row {
+  display: grid;
+  grid-template-columns: 8.5rem 1fr 7.25rem;
+  grid-template-areas: "name bar value";
+  align-items: center;
+  gap: 1rem;
+}
+
+.meter-row .meter-name {
+  grid-area: name;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.meter-row .meter-name .sub {
+  display: block;
+  font-weight: 400;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.meter-row .meter {
+  grid-area: bar;
+}
+
+.meter {
+  height: 8px;
+  border-radius: 4px;
+  background: #e9d9f3;            /* lighter step of the fill's own hue */
+  overflow: hidden;
+}
+
+.meter > span {
+  display: block;
+  height: 100%;
+  border-radius: 4px;
+  background: var(--move-1);
+}
+
+.meter-row .meter-value {
+  grid-area: value;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+  font-weight: 600;
+  text-align: right;
+  white-space: nowrap;
+}
+
+.meter-row .meter-value .sub {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+.meter-divider {
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-top: 1px solid var(--grid);
+  padding-top: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+/* ------------------------------------------------------ move-structure strips */
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.control {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.6rem;
+  max-width: 100%;
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.segmented {
+  display: inline-flex;
+  padding: 3px;
+  border-radius: 9px;
+  background: var(--surface-softer);
+}
+
+.segmented button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 600;
+  color: var(--text-secondary);
+  padding: 0.3rem 0.75rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.segmented button:hover {
+  color: var(--text-primary);
+}
+
+.segmented button[aria-pressed="true"] {
+  background: var(--surface);
+  color: var(--text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.strip-panels {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.strip-panel h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 0.1rem;
+}
+
+.strip-panel .panel-sub {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 0.6rem;
+}
+
+.strips {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  cursor: default;
+}
+
+.strip {
+  display: flex;
+  gap: 1px;
+  height: 4px;
+  /* a taller, invisible hit area than the painted strip */
+  position: relative;
+}
+
+.strip::after {
+  content: "";
+  position: absolute;
+  inset: -1px 0;
+}
+
+.strip .unit {
+  height: 100%;
+  min-width: 1px;
+}
+
+.strips.has-active .strip {
+  opacity: 0.35;
+}
+
+.strips.has-active .strip.is-active {
+  opacity: 1;
+  outline: 2px solid var(--text-primary);
+  outline-offset: 1px;
+  z-index: 1;
+}
+
+.panel-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--grid);
+}
+
+.panel-stat .stat-value {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 650;
+  line-height: 1.1;
+  color: var(--text-primary);
+}
+
+.panel-stat .stat-label {
+  display: block;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: var(--text-secondary);
+  margin-top: 0.2rem;
+}
+
+.viz-tooltip {
+  position: fixed;
+  z-index: 50;
+  max-width: 300px;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--surface);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  line-height: 1.4;
+  box-shadow: 0 8px 24px -6px rgb(31 27 45 / 0.25);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.08s ease;
+}
+
+.viz-tooltip.is-visible {
+  opacity: 1;
+}
+
+/* the value leads, the labels follow */
+.viz-tooltip .tt-value {
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--text-primary);
+}
+
+.viz-tooltip .tt-label {
+  color: var(--text-secondary);
+}
+
+.viz-tooltip .tt-rows {
+  margin-top: 0.35rem;
+  padding-top: 0.35rem;
+  border-top: 1px solid var(--grid);
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  gap: 0.1rem 0.45rem;
+  align-items: center;
+}
+
+/* line keys, not boxes */
+.viz-tooltip .tt-key {
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.viz-tooltip .tt-num {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+details.table-view {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+details.table-view summary {
+  cursor: pointer;
+  color: var(--accent);
+  font-weight: 600;
+  width: max-content;
+}
+
+details.table-view .table-wrap {
+  max-height: 320px;
+  overflow: auto;
+  margin-top: 0.6rem;
+  border: 1px solid var(--grid);
+  border-radius: 8px;
+}
+
+details.table-view table.data {
+  font-size: 0.82rem;
+}
+
+details.table-view table.data thead th {
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+}
+
+details.table-view table.data td,
+details.table-view table.data th {
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Grid children default to min-width: auto, so one wide table or code block
+   would stretch its column past the viewport. Let them shrink instead and
+   scroll inside their own box. */
+.split > *,
+.stat-row > *,
+.move-grid > *,
+.step-grid > *,
+.strip-panels > * {
+  min-width: 0;
+}
+
+/* ------------------------------------------------------------ two-column rows */
+
+.split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  text-align: left;
+}
+
+.split.is-wide-right {
+  grid-template-columns: 5fr 7fr;
+}
+
+.split.is-centered-y {
+  align-items: center;
+}
+
+.prose p {
+  color: var(--text-secondary);
+  margin-bottom: 0.9rem;
+}
+
+.prose p strong {
+  color: var(--text-primary);
+}
+
+.resource-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.resource-list li {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+}
+
+.resource-list a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.resource-list a:hover {
+  text-decoration: underline;
+}
+
+.resource-list p {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  margin-top: 0.15rem;
+}
+
+/* ----------------------------------------------------------------------- code */
+
+pre {
+  background: #1f1b2d;
+  color: #f2effa;
+  border-radius: var(--radius);
+  padding: 1.1rem 1.25rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  overflow-x: auto;
+  text-align: left;
+  white-space: pre;
+}
+
+pre code {
+  background: transparent;
+  color: inherit;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+code {
+  font-family: var(--mono);
+  font-size: 0.9em;
+  background: var(--surface-softer);
+  color: var(--text-primary);
+  padding: 0.1em 0.35em;
+  border-radius: 4px;
+}
+
+/* long BibTeX fields wrap instead of scrolling sideways */
+#bibtex-code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.bibtex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.bibtex-header .title {
+  margin-bottom: 0;
+}
+
+.copy-bibtex-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-primary);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.copy-bibtex-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.copy-bibtex-btn.copied {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #ffffff;
+}
+
+/* --------------------------------------------------------------------- footer */
+
+.footer {
+  background: var(--surface-soft);
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 1.5rem;
+}
+
+.footer .content p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.scroll-to-top {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 44px;
+  height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 50%;
+  background: var(--text-primary);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s, background-color 0.15s ease;
+  z-index: 40;
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: none;
+}
+
+.scroll-to-top:hover {
+  background: var(--accent);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ------------------------------------------------------------------ responsive */
+
+@media screen and (max-width: 1023px) {
+  .stat-row {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .hero-body {
+    padding: 2.5rem 1rem 1.5rem;
+  }
+
+  .publication-title {
+    font-size: 2rem !important;
+  }
+
+  .publication-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .publication-authors {
+    font-size: 1.05rem;
+  }
+
+  .stat-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .move-grid,
+  .step-grid,
+  .strip-panels,
+  .split,
+  .split.is-wide-right {
+    grid-template-columns: 1fr;
+  }
+
+  .strip-panels {
+    gap: 2rem;
+  }
+
+  /* label above its buttons, so the four generators fit a phone screen */
+  .control > span:first-child {
+    flex-basis: 100%;
+  }
+
+  .segmented button {
+    padding: 0.3rem 0.65rem;
+  }
+
+  .finding h3 {
+    font-size: 1.25rem;
+  }
+
+  .chart-card,
+  .figure-card {
+    padding: 1rem;
+  }
+
+  /* the framework figure is wide and detailed: keep it legible on a phone by
+     letting it scroll sideways inside its card */
+  .figure-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .figure-scroll img {
+    width: 760px;
+    max-width: none;
+  }
+
+  td.bar-cell {
+    min-width: 110px;
+  }
+
+  .meter-row {
+    grid-template-columns: 1fr max-content;
+    grid-template-areas: "name value" "bar bar";
+    gap: 0.35rem 1rem;
+  }
+
+  .bibtex-header {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  pre {
+    font-size: 0.78rem;
+    padding: 0.9rem 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  * {
+    transition: none !important;
+  }
+}
+
+@media print {
+  .scroll-to-top,
+  .publication-links,
+  .controls {
+    display: none !important;
+  }
+}

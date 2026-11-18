@@ -1,0 +1,23 @@
+# Core requirements: everything needed to reproduce the paper's numbers from
+# data/master_dataset.json, and to call the LLM APIs for generation and
+# annotation. Python 3.10 or newer.
+#
+# Tested with Python 3.12 and numpy 2.5.5, scipy 1.18.1, statsmodels 0.15.0,
+# pandas 3.1.1, matplotlib 3.11.2.
+
+# --- analysis (comparative_analysis/, validation, human-study analysis) ------
+numpy
+scipy
+statsmodels
+pandas
+matplotlib
+
+# --- shared utilities ---------------------------------------------------------
+python-dotenv
+openpyxl
+requests
+
+# --- LLM providers (imported lazily; install only the ones you call) ----------
+openai          # GPT models, and any OpenAI-compatible endpoint such as vLLM
+anthropic       # Claude models
+google-genai    # Gemini models (preliminary annotator comparison only)

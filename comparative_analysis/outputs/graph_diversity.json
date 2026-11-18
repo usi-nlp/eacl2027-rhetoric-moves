@@ -1,0 +1,396 @@
+{
+  "sources": {
+    "original": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.5094799498746868,
+        "edit_sim_sub": 0.33159194929989294,
+        "bag_sim_move": 0.7405919959436807,
+        "bag_sim_sub": 0.5202733504099155
+      },
+      "vendi": {
+        "move": 23.50545481803449,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.3092823002372959,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 36,
+      "move_structure_ttr": 0.47368421052631576
+    },
+    "gpt-5.5|basic": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6487248677248677,
+        "edit_sim_sub": 0.42644916012589085,
+        "bag_sim_move": 0.8658628317244764,
+        "bag_sim_sub": 0.6487032154802883
+      },
+      "vendi": {
+        "move": 9.857861876498076,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.12970870890129046,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 18,
+      "move_structure_ttr": 0.23684210526315788
+    },
+    "gpt-5.5|cars_guided": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6812213868003342,
+        "edit_sim_sub": 0.436063958576757,
+        "bag_sim_move": 0.8711125186730548,
+        "bag_sim_sub": 0.6742106046322122
+      },
+      "vendi": {
+        "move": 5.7292523569024425,
+        "sub": 74.62627261304058
+      },
+      "vendi_ratio": {
+        "move": 0.07538489943292688,
+        "sub": 0.9819246396452709
+      },
+      "n_move_structure_types": 9,
+      "move_structure_ttr": 0.11842105263157894
+    },
+    "claude-opus-4-8|basic": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6210803144224197,
+        "edit_sim_sub": 0.40423804981946265,
+        "bag_sim_move": 0.8359166853082911,
+        "bag_sim_sub": 0.6159457988017397
+      },
+      "vendi": {
+        "move": 13.262626266574664,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.17450824034966664,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 24,
+      "move_structure_ttr": 0.3157894736842105
+    },
+    "claude-opus-4-8|cars_guided": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.7235113288271182,
+        "edit_sim_sub": 0.46371814959432683,
+        "bag_sim_move": 0.8793701726237324,
+        "bag_sim_sub": 0.6512978225984365
+      },
+      "vendi": {
+        "move": 4.332925150700379,
+        "sub": 69.37522143357812
+      },
+      "vendi_ratio": {
+        "move": 0.0570121730355313,
+        "sub": 0.9128318609681332
+      },
+      "n_move_structure_types": 11,
+      "move_structure_ttr": 0.14473684210526316
+    },
+    "google/gemma-4-31B-it|basic": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6650542644490013,
+        "edit_sim_sub": 0.39773130493216036,
+        "bag_sim_move": 0.8351422259481781,
+        "bag_sim_sub": 0.6142435751426722
+      },
+      "vendi": {
+        "move": 7.725959294958944,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.10165735914419663,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 14,
+      "move_structure_ttr": 0.18421052631578946
+    },
+    "google/gemma-4-31B-it|cars_guided": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.7378137768664084,
+        "edit_sim_sub": 0.45998161032294155,
+        "bag_sim_move": 0.8572633131905749,
+        "bag_sim_sub": 0.641358389777804
+      },
+      "vendi": {
+        "move": 4.126973988255449,
+        "sub": 74.62627261304058
+      },
+      "vendi_ratio": {
+        "move": 0.05430228931915064,
+        "sub": 0.9819246396452709
+      },
+      "n_move_structure_types": 8,
+      "move_structure_ttr": 0.10526315789473684
+    },
+    "Qwen/Qwen3.5-27B|basic": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6300780710517552,
+        "edit_sim_sub": 0.3738727257917009,
+        "bag_sim_move": 0.8057510789120952,
+        "bag_sim_sub": 0.6182316903049367
+      },
+      "vendi": {
+        "move": 22.537538401858143,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.2965465579191861,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 35,
+      "move_structure_ttr": 0.4605263157894737
+    },
+    "Qwen/Qwen3.5-27B|cars_guided": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6630892854708644,
+        "edit_sim_sub": 0.4412406608149359,
+        "bag_sim_move": 0.8369256529674187,
+        "bag_sim_sub": 0.6542578915025541
+      },
+      "vendi": {
+        "move": 12.124368322305568,
+        "sub": 74.62627261304058
+      },
+      "vendi_ratio": {
+        "move": 0.15953116213559956,
+        "sub": 0.9819246396452709
+      },
+      "n_move_structure_types": 25,
+      "move_structure_ttr": 0.32894736842105265
+    }
+  },
+  "by_mode": {
+    "original": {
+      "n": 76,
+      "mean_pairwise": {
+        "edit_sim_move": 0.5094799498746868,
+        "edit_sim_sub": 0.33159194929989294,
+        "bag_sim_move": 0.7405919959436807,
+        "bag_sim_sub": 0.5202733504099155
+      },
+      "vendi": {
+        "move": 23.50545481803449,
+        "sub": 75.99999999999993
+      },
+      "vendi_ratio": {
+        "move": 0.3092823002372959,
+        "sub": 0.9999999999999991
+      },
+      "n_move_structure_types": 36,
+      "move_structure_ttr": 0.47368421052631576
+    },
+    "basic": {
+      "n": 304,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6260735499157204,
+        "edit_sim_sub": 0.38904730787870545,
+        "bag_sim_move": 0.8235327802209429,
+        "bag_sim_sub": 0.6117596919821819
+      },
+      "vendi": {
+        "move": 16.53277709896796,
+        "sub": 302.616861714726
+      },
+      "vendi_ratio": {
+        "move": 0.054384135193973546,
+        "sub": 0.995450203008967
+      },
+      "n_move_structure_types": 55,
+      "move_structure_ttr": 0.18092105263157895
+    },
+    "cars_guided": {
+      "n": 304,
+      "mean_pairwise": {
+        "edit_sim_move": 0.6782152939966255,
+        "edit_sim_sub": 0.4283838942319323,
+        "bag_sim_move": 0.835951634835225,
+        "bag_sim_sub": 0.6362447818407352
+      },
+      "vendi": {
+        "move": 7.2688768607667935,
+        "sub": 282.9252128342776
+      },
+      "vendi_ratio": {
+        "move": 0.023910779147259188,
+        "sub": 0.9306750422180184
+      },
+      "n_move_structure_types": 29,
+      "move_structure_ttr": 0.09539473684210527
+    }
+  },
+  "by_quartile": {
+    "Q1": {
+      "original": {
+        "n": 16,
+        "mean_pairwise": {
+          "edit_sim_move": 0.5832407407407406,
+          "edit_sim_sub": 0.3071173271173271,
+          "bag_sim_move": 0.782924391833402,
+          "bag_sim_sub": 0.512499136336995
+        },
+        "vendi": {
+          "move": 9.717862787041229,
+          "sub": 15.999999999999998
+        },
+        "vendi_ratio": {
+          "move": 0.6073664241900768,
+          "sub": 0.9999999999999999
+        },
+        "n_move_structure_types": 11,
+        "move_structure_ttr": 0.6875
+      },
+      "generated": {
+        "n": 128,
+        "mean_pairwise": {
+          "edit_sim_move": 0.6609792295139244,
+          "edit_sim_sub": 0.3872116657321758,
+          "bag_sim_move": 0.818372744200769,
+          "bag_sim_sub": 0.597367904236468
+        },
+        "vendi": {
+          "move": 10.579950288474835,
+          "sub": 122.07317854029436
+        },
+        "vendi_ratio": {
+          "move": 0.08265586162870965,
+          "sub": 0.9536967073460497
+        },
+        "n_move_structure_types": 25,
+        "move_structure_ttr": 0.1953125
+      }
+    },
+    "Q2": {
+      "original": {
+        "n": 20,
+        "mean_pairwise": {
+          "edit_sim_move": 0.451046365914787,
+          "edit_sim_sub": 0.3538162377019718,
+          "bag_sim_move": 0.7708084329060533,
+          "bag_sim_sub": 0.5899094195398908
+        },
+        "vendi": {
+          "move": 13.19507910772894,
+          "sub": 19.999999999999996
+        },
+        "vendi_ratio": {
+          "move": 0.659753955386447,
+          "sub": 0.9999999999999998
+        },
+        "n_move_structure_types": 14,
+        "move_structure_ttr": 0.7
+      },
+      "generated": {
+        "n": 160,
+        "mean_pairwise": {
+          "edit_sim_move": 0.6428750686769554,
+          "edit_sim_sub": 0.42755213250759555,
+          "bag_sim_move": 0.8374862169231904,
+          "bag_sim_sub": 0.6450873229250706
+        },
+        "vendi": {
+          "move": 10.860727841239422,
+          "sub": 158.61969399402608
+        },
+        "vendi_ratio": {
+          "move": 0.06787954900774638,
+          "sub": 0.991373087462663
+        },
+        "n_move_structure_types": 27,
+        "move_structure_ttr": 0.16875
+      }
+    },
+    "Q3": {
+      "original": {
+        "n": 20,
+        "mean_pairwise": {
+          "edit_sim_move": 0.5040079365079365,
+          "edit_sim_sub": 0.3403964289064908,
+          "bag_sim_move": 0.6661226005775583,
+          "bag_sim_sub": 0.44773576092581147
+        },
+        "vendi": {
+          "move": 10.583183023748255,
+          "sub": 19.999999999999996
+        },
+        "vendi_ratio": {
+          "move": 0.5291591511874127,
+          "sub": 0.9999999999999998
+        },
+        "n_move_structure_types": 13,
+        "move_structure_ttr": 0.65
+      },
+      "generated": {
+        "n": 160,
+        "mean_pairwise": {
+          "edit_sim_move": 0.6342184394483923,
+          "edit_sim_sub": 0.39154506599960887,
+          "bag_sim_move": 0.8240465649678236,
+          "bag_sim_sub": 0.6090768353528527
+        },
+        "vendi": {
+          "move": 9.998477119428593,
+          "sub": 156.73787668841436
+        },
+        "vendi_ratio": {
+          "move": 0.062490481996428704,
+          "sub": 0.9796117293025898
+        },
+        "n_move_structure_types": 28,
+        "move_structure_ttr": 0.175
+      }
+    },
+    "Q4": {
+      "original": {
+        "n": 20,
+        "mean_pairwise": {
+          "edit_sim_move": 0.5208646616541354,
+          "edit_sim_sub": 0.3447678018575852,
+          "bag_sim_move": 0.7805223295949818,
+          "bag_sim_sub": 0.5576937071441557
+        },
+        "vendi": {
+          "move": 11.486983549970347,
+          "sub": 19.999999999999996
+        },
+        "vendi_ratio": {
+          "move": 0.5743491774985173,
+          "sub": 0.9999999999999998
+        },
+        "n_move_structure_types": 14,
+        "move_structure_ttr": 0.7
+      },
+      "generated": {
+        "n": 160,
+        "mean_pairwise": {
+          "edit_sim_move": 0.6563019060778496,
+          "edit_sim_sub": 0.4245316645294575,
+          "bag_sim_move": 0.8293702108306518,
+          "bag_sim_sub": 0.6415671036861776
+        },
+        "vendi": {
+          "move": 8.994091148774794,
+          "sub": 155.89470259227323
+        },
+        "vendi_ratio": {
+          "move": 0.056213069679842464,
+          "sub": 0.9743418912017077
+        },
+        "n_move_structure_types": 24,
+        "move_structure_ttr": 0.15
+      }
+    }
+  }
+}

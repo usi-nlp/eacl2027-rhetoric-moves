@@ -1,0 +1,22 @@
+<View>
+  <HyperText name="intro" value="$html"/>
+  <Header value="Q1 — Who wrote this introduction?"/>
+  <Choices name="provenance" toName="intro" choice="single-radio" required="true"
+           requiredMessage="Please answer Q1.">
+    <Choice value="1 — Sure it&#x27;s human"/>
+    <Choice value="2 — Most likely human"/>
+    <Choice value="3 — Can&#x27;t decide"/>
+    <Choice value="4 — Most likely AI"/>
+    <Choice value="5 — Sure it&#x27;s AI"/>
+  </Choices>
+  <Header value="Q2 — What did you base your decision on? (tick all that apply)"/>
+  <Choices name="basis" toName="intro" choice="multiple" required="true"
+           requiredMessage="Please tick at least one option in Q2.">
+    <Choice value="Argumentation / Swales CARS structure"/>
+    <Choice value="Writing style"/>
+    <Choice value="Just a guess"/>
+  </Choices>
+  <Header value="Optional comment"/>
+  <TextArea name="comment" toName="intro" rows="3" maxSubmissions="1"
+            placeholder="anything that struck you…"/>
+</View>

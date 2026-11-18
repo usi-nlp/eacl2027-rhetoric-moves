@@ -1,0 +1,289 @@
+{
+  "similarity": {
+    "primary_metric": "edit_sim_sub",
+    "per_source": {
+      "gpt-5.5|basic": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.6150428153717628,
+          "edit_sim_sub": 0.41138816103804765,
+          "bag_sim_move": 0.8257474965937714,
+          "bag_sim_sub": 0.6324063402667265
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5619816207184629,
+          "edit_sim_sub": 0.34830414004624916,
+          "bag_sim_move": 0.7873097304470899,
+          "bag_sim_sub": 0.5536338944823403
+        },
+        "delta": {
+          "edit_sim_move": 0.05306119465329984,
+          "edit_sim_sub": 0.0630840209917985,
+          "bag_sim_move": 0.038437766146681596,
+          "bag_sim_sub": 0.07877244578438614
+        }
+      },
+      "gpt-5.5|cars_guided": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.6093880534670009,
+          "edit_sim_sub": 0.40678924083444246,
+          "bag_sim_move": 0.8129372416811974,
+          "bag_sim_sub": 0.6182456916091007
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5694484126984127,
+          "edit_sim_sub": 0.3519484543553427,
+          "bag_sim_move": 0.7868411072140731,
+          "bag_sim_sub": 0.565665846758556
+        },
+        "delta": {
+          "edit_sim_move": 0.039939640768588136,
+          "edit_sim_sub": 0.054840786479099735,
+          "bag_sim_move": 0.026096134467124332,
+          "bag_sim_sub": 0.05257984485054468
+        }
+      },
+      "claude-opus-4-8|basic": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.610914268480058,
+          "edit_sim_sub": 0.4230732018186676,
+          "bag_sim_move": 0.8100831416889743,
+          "bag_sim_sub": 0.6329495555406117
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5513728634912846,
+          "edit_sim_sub": 0.3544248657708261,
+          "bag_sim_move": 0.7732410804283958,
+          "bag_sim_sub": 0.557577458034073
+        },
+        "delta": {
+          "edit_sim_move": 0.05954140498877347,
+          "edit_sim_sub": 0.06864833604784149,
+          "bag_sim_move": 0.03684206126057854,
+          "bag_sim_sub": 0.07537209750653873
+        }
+      },
+      "claude-opus-4-8|cars_guided": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.6110171261487051,
+          "edit_sim_sub": 0.4299479384134957,
+          "bag_sim_move": 0.7962201162396422,
+          "bag_sim_sub": 0.6111158212214406
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5791672362724994,
+          "edit_sim_sub": 0.3637826000458964,
+          "bag_sim_move": 0.7664811016662383,
+          "bag_sim_sub": 0.5549695817681446
+        },
+        "delta": {
+          "edit_sim_move": 0.03184988987620563,
+          "edit_sim_sub": 0.0661653383675993,
+          "bag_sim_move": 0.029739014573403888,
+          "bag_sim_sub": 0.056146239453296
+        }
+      },
+      "google/gemma-4-31B-it|basic": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.6130881180223285,
+          "edit_sim_sub": 0.4108849387422998,
+          "bag_sim_move": 0.800482382647151,
+          "bag_sim_sub": 0.6225844944893243
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.566395287461077,
+          "edit_sim_sub": 0.35158625670462884,
+          "bag_sim_move": 0.7740826367581556,
+          "bag_sim_sub": 0.5517512686784297
+        },
+        "delta": {
+          "edit_sim_move": 0.04669283056125151,
+          "edit_sim_sub": 0.05929868203767097,
+          "bag_sim_move": 0.026399745888995407,
+          "bag_sim_sub": 0.07083322581089457
+        }
+      },
+      "google/gemma-4-31B-it|cars_guided": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.6020154553049291,
+          "edit_sim_sub": 0.39269755809748885,
+          "bag_sim_move": 0.7566656614596547,
+          "bag_sim_sub": 0.572311065965588
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.579608142831827,
+          "edit_sim_sub": 0.3447605534499538,
+          "bag_sim_move": 0.7293676050137383,
+          "bag_sim_sub": 0.5282785883601983
+        },
+        "delta": {
+          "edit_sim_move": 0.022407312473102015,
+          "edit_sim_sub": 0.04793700464753503,
+          "bag_sim_move": 0.02729805644591643,
+          "bag_sim_sub": 0.04403247760538975
+        }
+      },
+      "Qwen/Qwen3.5-27B|basic": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.552459419235735,
+          "edit_sim_sub": 0.3822109754405155,
+          "bag_sim_move": 0.7764690731345304,
+          "bag_sim_sub": 0.5973705029663198
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5137494995258154,
+          "edit_sim_sub": 0.3305115721963388,
+          "bag_sim_move": 0.7502136093822663,
+          "bag_sim_sub": 0.549284228448398
+        },
+        "delta": {
+          "edit_sim_move": 0.03870991970991966,
+          "edit_sim_sub": 0.05169940324417671,
+          "bag_sim_move": 0.026255463752264063,
+          "bag_sim_sub": 0.0480862745179218
+        }
+      },
+      "Qwen/Qwen3.5-27B|cars_guided": {
+        "n": 76,
+        "paired_mean": {
+          "edit_sim_move": 0.5621287886090517,
+          "edit_sim_sub": 0.38439696828358616,
+          "bag_sim_move": 0.7526977863325138,
+          "bag_sim_sub": 0.5840080112921043
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5416844600331442,
+          "edit_sim_sub": 0.34730214407847887,
+          "bag_sim_move": 0.7230084169050567,
+          "bag_sim_sub": 0.5320198627540302
+        },
+        "delta": {
+          "edit_sim_move": 0.0204443285759075,
+          "edit_sim_sub": 0.03709482420510729,
+          "bag_sim_move": 0.029689369427457146,
+          "bag_sim_sub": 0.0519881485380741
+        }
+      }
+    },
+    "per_model": {
+      "gpt-5.5": {
+        "n": 152,
+        "paired_mean": {
+          "edit_sim_move": 0.6122154344193818,
+          "edit_sim_sub": 0.40908870093624505,
+          "bag_sim_move": 0.8193423691374845,
+          "bag_sim_sub": 0.6253260159379137
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5657150167084378,
+          "edit_sim_sub": 0.3501262972007959,
+          "bag_sim_move": 0.7870754188305814,
+          "bag_sim_sub": 0.5596498706204482
+        },
+        "delta": {
+          "edit_sim_move": 0.04650041771094393,
+          "edit_sim_sub": 0.05896240373544914,
+          "bag_sim_move": 0.032266950306903075,
+          "bag_sim_sub": 0.06567614531746546
+        }
+      },
+      "claude-opus-4-8": {
+        "n": 152,
+        "paired_mean": {
+          "edit_sim_move": 0.6109656973143816,
+          "edit_sim_sub": 0.4265105701160817,
+          "bag_sim_move": 0.8031516289643083,
+          "bag_sim_sub": 0.6220326883810262
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.565270049881892,
+          "edit_sim_sub": 0.3591037329083613,
+          "bag_sim_move": 0.7698610910473169,
+          "bag_sim_sub": 0.5562735199011087
+        },
+        "delta": {
+          "edit_sim_move": 0.04569564743248955,
+          "edit_sim_sub": 0.0674068372077204,
+          "bag_sim_move": 0.033290537916991325,
+          "bag_sim_sub": 0.06575916847991747
+        }
+      },
+      "google/gemma-4-31B-it": {
+        "n": 152,
+        "paired_mean": {
+          "edit_sim_move": 0.6075517866636289,
+          "edit_sim_sub": 0.40179124841989433,
+          "bag_sim_move": 0.7785740220534029,
+          "bag_sim_sub": 0.5974477802274561
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5730017151464519,
+          "edit_sim_sub": 0.34817340507729133,
+          "bag_sim_move": 0.7517251208859469,
+          "bag_sim_sub": 0.540014928519314
+        },
+        "delta": {
+          "edit_sim_move": 0.03455007151717693,
+          "edit_sim_sub": 0.053617843342603,
+          "bag_sim_move": 0.026848901167455974,
+          "bag_sim_sub": 0.05743285170814216
+        }
+      },
+      "Qwen/Qwen3.5-27B": {
+        "n": 152,
+        "paired_mean": {
+          "edit_sim_move": 0.5572941039223934,
+          "edit_sim_sub": 0.38330397186205084,
+          "bag_sim_move": 0.7645834297335221,
+          "bag_sim_sub": 0.5906892571292119
+        },
+        "mismatched_mean": {
+          "edit_sim_move": 0.5277169797794798,
+          "edit_sim_sub": 0.3389068581374088,
+          "bag_sim_move": 0.7366110131436615,
+          "bag_sim_sub": 0.540652045601214
+        },
+        "delta": {
+          "edit_sim_move": 0.02957712414291358,
+          "edit_sim_sub": 0.04439711372464206,
+          "bag_sim_move": 0.027972416589860605,
+          "bag_sim_sub": 0.050037211527997894
+        }
+      }
+    }
+  },
+  "selection": {
+    "primary_metric": "edit_sim_sub",
+    "ranking": [
+      {
+        "model": "claude-opus-4-8",
+        "edit_sim_sub": 0.4265105701160817,
+        "delta_over_mismatched": 0.0674068372077204
+      },
+      {
+        "model": "gpt-5.5",
+        "edit_sim_sub": 0.40908870093624505,
+        "delta_over_mismatched": 0.05896240373544914
+      },
+      {
+        "model": "google/gemma-4-31B-it",
+        "edit_sim_sub": 0.40179124841989433,
+        "delta_over_mismatched": 0.053617843342603
+      },
+      {
+        "model": "Qwen/Qwen3.5-27B",
+        "edit_sim_sub": 0.38330397186205084,
+        "delta_over_mismatched": 0.04439711372464206
+      }
+    ],
+    "recommended_generator": "claude-opus-4-8",
+    "current_default": "claude-opus-4-8",
+    "note": "PLACEHOLDER selection -- significance testing (Wilcoxon+FDR) still to run before overriding the default and rebuilding discrimination_experiment/allocation.json."
+  }
+}

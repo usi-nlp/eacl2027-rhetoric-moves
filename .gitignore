@@ -1,0 +1,43 @@
+# --- secrets / local config ---------------------------------------------------
+.env
+.env.*
+!.env.example
+/config/
+
+# --- data that is not redistributed --------------------------------------------
+# Article PDFs, parsed full texts and reference lists. Only
+# data/master_dataset.json and data/README.md are tracked.
+/data/*
+!/data/master_dataset.json
+!/data/README.md
+
+# --- run artifacts --------------------------------------------------------------
+/intro_generation/results/
+/intro_analysis/results/
+/discrimination_experiment/dry_run/
+/discrimination_experiment/static_ui/
+/discrimination_experiment/returned/
+slurm-*.out
+
+# --- Python ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+
+# --- virtual environments -------------------------------------------------------
+.venv/
+venv/
+env/
+
+# --- OS / editors ---------------------------------------------------------------
+.DS_Store
+.vscode/
+.idea/
+
+# --- agent tooling ---------------------------------------------------------------
+.claude/
+CLAUDE.md

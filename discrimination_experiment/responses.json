@@ -1,0 +1,1345 @@
+{
+ "meta": {
+  "exported": "2026-07-27T10:18:41",
+  "source_files": [
+   "labelstudio_export.json"
+  ],
+  "medium": "labelstudio",
+  "n_answered": 120
+ },
+ "responses": {
+  "item_001": {
+   "position": 1,
+   "label_condition": "unlabeled",
+   "provenance": 1,
+   "basis": [
+    "writing_style"
+   ],
+   "comment": "Some repetitions along with the wrong use of connectors some times makes me think that it is written by a Human.",
+   "lead_time": 602.237,
+   "submitted_at": "2026-07-24T09:05:37.040711Z"
+  },
+  "item_002": {
+   "position": 2,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 1150.249,
+   "submitted_at": "2026-07-24T09:24:47.462949Z"
+  },
+  "item_003": {
+   "position": 3,
+   "label_condition": "labeled",
+   "provenance": 1,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 308.705,
+   "submitted_at": "2026-07-24T09:29:56.321911Z"
+  },
+  "item_004": {
+   "position": 4,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 346.8,
+   "submitted_at": "2026-07-24T09:35:43.352632Z"
+  },
+  "item_005": {
+   "position": 5,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 463.384,
+   "submitted_at": "2026-07-24T09:43:26.902148Z"
+  },
+  "item_006": {
+   "position": 6,
+   "label_condition": "unlabeled",
+   "provenance": 5,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 175.48,
+   "submitted_at": "2026-07-24T09:46:22.595728Z"
+  },
+  "item_007": {
+   "position": 7,
+   "label_condition": "unlabeled",
+   "provenance": 5,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 85.293,
+   "submitted_at": "2026-07-24T09:47:48.034886Z"
+  },
+  "item_008": {
+   "position": 8,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 176.289,
+   "submitted_at": "2026-07-24T09:50:44.499677Z"
+  },
+  "item_009": {
+   "position": 9,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 154.631,
+   "submitted_at": "2026-07-24T09:53:19.299734Z"
+  },
+  "item_010": {
+   "position": 10,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.969,
+   "submitted_at": "2026-07-24T09:53:55.459671Z"
+  },
+  "item_011": {
+   "position": 11,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 33.781,
+   "submitted_at": "2026-07-24T09:54:29.447267Z"
+  },
+  "item_012": {
+   "position": 12,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 31.126,
+   "submitted_at": "2026-07-24T09:55:00.722509Z"
+  },
+  "item_013": {
+   "position": 13,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 33.768,
+   "submitted_at": "2026-07-24T09:55:34.708899Z"
+  },
+  "item_014": {
+   "position": 14,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 28.561,
+   "submitted_at": "2026-07-24T09:56:03.423323Z"
+  },
+  "item_015": {
+   "position": 15,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.422,
+   "submitted_at": "2026-07-24T09:56:39.002532Z"
+  },
+  "item_016": {
+   "position": 16,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 39.019,
+   "submitted_at": "2026-07-24T09:57:18.167380Z"
+  },
+  "item_017": {
+   "position": 17,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 36.384,
+   "submitted_at": "2026-07-24T09:57:54.692930Z"
+  },
+  "item_018": {
+   "position": 18,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 34.251,
+   "submitted_at": "2026-07-24T09:58:29.090168Z"
+  },
+  "item_019": {
+   "position": 19,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.296,
+   "submitted_at": "2026-07-24T09:59:06.519265Z"
+  },
+  "item_020": {
+   "position": 20,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.472,
+   "submitted_at": "2026-07-24T09:59:44.161383Z"
+  },
+  "item_021": {
+   "position": 21,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 24.461,
+   "submitted_at": "2026-07-24T10:00:08.793415Z"
+  },
+  "item_022": {
+   "position": 22,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 31.56,
+   "submitted_at": "2026-07-24T10:00:40.517536Z"
+  },
+  "item_023": {
+   "position": 23,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 50.355,
+   "submitted_at": "2026-07-24T10:01:31.050106Z"
+  },
+  "item_024": {
+   "position": 24,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 53.558,
+   "submitted_at": "2026-07-24T10:02:24.786378Z"
+  },
+  "item_025": {
+   "position": 25,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 66.526,
+   "submitted_at": "2026-07-24T10:03:35.322246Z"
+  },
+  "item_026": {
+   "position": 26,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 34.766,
+   "submitted_at": "2026-07-24T10:04:10.237761Z"
+  },
+  "item_027": {
+   "position": 27,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 51.377,
+   "submitted_at": "2026-07-24T10:05:01.802789Z"
+  },
+  "item_028": {
+   "position": 28,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 42.26,
+   "submitted_at": "2026-07-24T10:05:44.255311Z"
+  },
+  "item_029": {
+   "position": 29,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 68.59,
+   "submitted_at": "2026-07-24T10:06:53.033323Z"
+  },
+  "item_030": {
+   "position": 30,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 42.599,
+   "submitted_at": "2026-07-24T10:07:35.811363Z"
+  },
+  "item_031": {
+   "position": 31,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.528,
+   "submitted_at": "2026-07-24T10:08:13.540759Z"
+  },
+  "item_032": {
+   "position": 32,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 44.602,
+   "submitted_at": "2026-07-24T10:08:58.286853Z"
+  },
+  "item_033": {
+   "position": 33,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 54.494,
+   "submitted_at": "2026-07-24T10:09:52.922475Z"
+  },
+  "item_034": {
+   "position": 34,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 40.367,
+   "submitted_at": "2026-07-24T10:10:33.449912Z"
+  },
+  "item_035": {
+   "position": 35,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.821,
+   "submitted_at": "2026-07-24T10:11:09.486535Z"
+  },
+  "item_036": {
+   "position": 36,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 43.076,
+   "submitted_at": "2026-07-24T10:11:52.803336Z"
+  },
+  "item_037": {
+   "position": 37,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 59.469,
+   "submitted_at": "2026-07-24T10:12:52.450299Z"
+  },
+  "item_038": {
+   "position": 38,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 50.43,
+   "submitted_at": "2026-07-24T10:13:43.073458Z"
+  },
+  "item_039": {
+   "position": 39,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 28.972,
+   "submitted_at": "2026-07-24T10:14:12.231519Z"
+  },
+  "item_040": {
+   "position": 40,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.852,
+   "submitted_at": "2026-07-24T10:14:50.217920Z"
+  },
+  "item_041": {
+   "position": 41,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 47.07,
+   "submitted_at": "2026-07-24T10:15:37.440331Z"
+  },
+  "item_042": {
+   "position": 42,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 61.58,
+   "submitted_at": "2026-07-24T10:16:39.246490Z"
+  },
+  "item_043": {
+   "position": 43,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 32.229,
+   "submitted_at": "2026-07-24T10:17:11.712290Z"
+  },
+  "item_044": {
+   "position": 44,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 51.378,
+   "submitted_at": "2026-07-24T10:18:03.333958Z"
+  },
+  "item_045": {
+   "position": 45,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 43.113,
+   "submitted_at": "2026-07-24T10:18:46.656849Z"
+  },
+  "item_046": {
+   "position": 46,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 45.948,
+   "submitted_at": "2026-07-24T10:19:32.832143Z"
+  },
+  "item_047": {
+   "position": 47,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 67.984,
+   "submitted_at": "2026-07-24T10:20:44.812803Z"
+  },
+  "item_048": {
+   "position": 48,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 81.983,
+   "submitted_at": "2026-07-24T10:22:10.832317Z"
+  },
+  "item_049": {
+   "position": 49,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 70.983,
+   "submitted_at": "2026-07-24T10:23:25.817068Z"
+  },
+  "item_050": {
+   "position": 50,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 68.981,
+   "submitted_at": "2026-07-24T10:24:38.802186Z"
+  },
+  "item_051": {
+   "position": 51,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 66.983,
+   "submitted_at": "2026-07-24T10:25:49.794244Z"
+  },
+  "item_052": {
+   "position": 52,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 73.981,
+   "submitted_at": "2026-07-24T10:27:07.800883Z"
+  },
+  "item_053": {
+   "position": 53,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 58.977,
+   "submitted_at": "2026-07-24T10:28:10.797325Z"
+  },
+  "item_054": {
+   "position": 54,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 191.981,
+   "submitted_at": "2026-07-24T10:31:26.831214Z"
+  },
+  "item_055": {
+   "position": 55,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 69.979,
+   "submitted_at": "2026-07-24T10:32:40.803621Z"
+  },
+  "item_056": {
+   "position": 56,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 348.987,
+   "submitted_at": "2026-07-24T10:38:33.905921Z"
+  },
+  "item_057": {
+   "position": 57,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 116.976,
+   "submitted_at": "2026-07-24T10:40:34.875524Z"
+  },
+  "item_058": {
+   "position": 58,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 82.975,
+   "submitted_at": "2026-07-24T10:42:01.832471Z"
+  },
+  "item_059": {
+   "position": 59,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 102.47,
+   "submitted_at": "2026-07-24T10:43:48.301029Z"
+  },
+  "item_060": {
+   "position": 60,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 9531.426,
+   "submitted_at": "2026-07-24T13:22:39.912445Z"
+  },
+  "item_061": {
+   "position": 61,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 31.884,
+   "submitted_at": "2026-07-24T13:23:11.955560Z"
+  },
+  "item_062": {
+   "position": 62,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 34.124,
+   "submitted_at": "2026-07-24T13:23:46.256460Z"
+  },
+  "item_063": {
+   "position": 63,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 26.802,
+   "submitted_at": "2026-07-24T13:24:13.228412Z"
+  },
+  "item_064": {
+   "position": 64,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 30.315,
+   "submitted_at": "2026-07-24T13:24:43.702233Z"
+  },
+  "item_065": {
+   "position": 65,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 27.185,
+   "submitted_at": "2026-07-24T13:25:11.085830Z"
+  },
+  "item_066": {
+   "position": 66,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 30.839,
+   "submitted_at": "2026-07-24T13:25:42.098350Z"
+  },
+  "item_067": {
+   "position": 67,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 27.256,
+   "submitted_at": "2026-07-24T13:26:10.010005Z"
+  },
+  "item_068": {
+   "position": 68,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 87.401,
+   "submitted_at": "2026-07-24T13:27:37.939896Z"
+  },
+  "item_069": {
+   "position": 69,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 31.409,
+   "submitted_at": "2026-07-24T13:28:09.493497Z"
+  },
+  "item_070": {
+   "position": 70,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 30.34,
+   "submitted_at": "2026-07-24T13:28:39.972802Z"
+  },
+  "item_071": {
+   "position": 71,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.406,
+   "submitted_at": "2026-07-24T13:29:17.547173Z"
+  },
+  "item_072": {
+   "position": 72,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 29.855,
+   "submitted_at": "2026-07-24T13:29:47.533958Z"
+  },
+  "item_073": {
+   "position": 73,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 31.491,
+   "submitted_at": "2026-07-24T13:30:19.195132Z"
+  },
+  "item_074": {
+   "position": 74,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.726,
+   "submitted_at": "2026-07-24T13:30:55.056410Z"
+  },
+  "item_075": {
+   "position": 75,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 38.649,
+   "submitted_at": "2026-07-24T13:31:33.855729Z"
+  },
+  "item_076": {
+   "position": 76,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.326,
+   "submitted_at": "2026-07-24T13:32:11.315533Z"
+  },
+  "item_077": {
+   "position": 77,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 44.847,
+   "submitted_at": "2026-07-24T13:32:56.302711Z"
+  },
+  "item_078": {
+   "position": 78,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 38.987,
+   "submitted_at": "2026-07-24T13:33:35.432542Z"
+  },
+  "item_079": {
+   "position": 79,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 24.677,
+   "submitted_at": "2026-07-24T13:34:00.248776Z"
+  },
+  "item_080": {
+   "position": 80,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 41.515,
+   "submitted_at": "2026-07-24T13:34:41.897747Z"
+  },
+  "item_081": {
+   "position": 81,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 30.623,
+   "submitted_at": "2026-07-24T13:35:12.692958Z"
+  },
+  "item_082": {
+   "position": 82,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 39.697,
+   "submitted_at": "2026-07-24T13:35:52.516264Z"
+  },
+  "item_083": {
+   "position": 83,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 45.186,
+   "submitted_at": "2026-07-24T13:36:37.842848Z"
+  },
+  "item_084": {
+   "position": 84,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 24.81,
+   "submitted_at": "2026-07-24T13:37:02.791880Z"
+  },
+  "item_085": {
+   "position": 85,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 35.104,
+   "submitted_at": "2026-07-24T13:37:38.044201Z"
+  },
+  "item_086": {
+   "position": 86,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 36.158,
+   "submitted_at": "2026-07-24T13:38:14.356039Z"
+  },
+  "item_087": {
+   "position": 87,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.599,
+   "submitted_at": "2026-07-24T13:38:50.103848Z"
+  },
+  "item_088": {
+   "position": 88,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 45.587,
+   "submitted_at": "2026-07-24T13:39:35.849465Z"
+  },
+  "item_089": {
+   "position": 89,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 41.05,
+   "submitted_at": "2026-07-24T13:40:17.030977Z"
+  },
+  "item_090": {
+   "position": 90,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 53.398,
+   "submitted_at": "2026-07-24T13:41:10.574725Z"
+  },
+  "item_091": {
+   "position": 91,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 49.492,
+   "submitted_at": "2026-07-24T13:42:00.206332Z"
+  },
+  "item_092": {
+   "position": 92,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 48.902,
+   "submitted_at": "2026-07-24T13:42:49.255085Z"
+  },
+  "item_093": {
+   "position": 93,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 35.516,
+   "submitted_at": "2026-07-24T13:43:24.914448Z"
+  },
+  "item_094": {
+   "position": 94,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 37.189,
+   "submitted_at": "2026-07-24T13:44:02.239009Z"
+  },
+  "item_095": {
+   "position": 95,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 74.372,
+   "submitted_at": "2026-07-24T13:45:16.760377Z"
+  },
+  "item_096": {
+   "position": 96,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 96.258,
+   "submitted_at": "2026-07-24T13:46:53.164488Z"
+  },
+  "item_097": {
+   "position": 97,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 97.8,
+   "submitted_at": "2026-07-24T13:48:31.109262Z"
+  },
+  "item_098": {
+   "position": 98,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 127.912,
+   "submitted_at": "2026-07-24T13:50:39.176430Z"
+  },
+  "item_099": {
+   "position": 99,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 843.99,
+   "submitted_at": "2026-07-24T14:04:43.325909Z"
+  },
+  "item_100": {
+   "position": 100,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 38.075,
+   "submitted_at": "2026-07-24T14:05:21.539213Z"
+  },
+  "item_101": {
+   "position": 101,
+   "label_condition": "unlabeled",
+   "provenance": 5,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 82.9,
+   "submitted_at": "2026-07-24T14:06:44.596158Z"
+  },
+  "item_102": {
+   "position": 102,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 60.942,
+   "submitted_at": "2026-07-24T14:07:45.661488Z"
+  },
+  "item_103": {
+   "position": 103,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 66.181,
+   "submitted_at": "2026-07-24T20:39:40.081544Z"
+  },
+  "item_104": {
+   "position": 104,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 39.358,
+   "submitted_at": "2026-07-24T20:40:19.587469Z"
+  },
+  "item_105": {
+   "position": 105,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 54.175,
+   "submitted_at": "2026-07-24T20:41:13.947996Z"
+  },
+  "item_106": {
+   "position": 106,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 41.253,
+   "submitted_at": "2026-07-24T20:41:55.368732Z"
+  },
+  "item_107": {
+   "position": 107,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 71.88,
+   "submitted_at": "2026-07-24T20:43:07.426439Z"
+  },
+  "item_108": {
+   "position": 108,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 49.896,
+   "submitted_at": "2026-07-24T20:43:57.454967Z"
+  },
+  "item_109": {
+   "position": 109,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 55.25,
+   "submitted_at": "2026-07-24T20:44:52.845514Z"
+  },
+  "item_110": {
+   "position": 110,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 63.121,
+   "submitted_at": "2026-07-24T20:45:56.111830Z"
+  },
+  "item_111": {
+   "position": 111,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure",
+    "writing_style"
+   ],
+   "comment": null,
+   "lead_time": 72.131,
+   "submitted_at": "2026-07-24T20:47:08.396959Z"
+  },
+  "item_112": {
+   "position": 112,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 86.55,
+   "submitted_at": "2026-07-24T20:48:35.082529Z"
+  },
+  "item_113": {
+   "position": 113,
+   "label_condition": "labeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 47.176,
+   "submitted_at": "2026-07-24T20:49:22.446017Z"
+  },
+  "item_114": {
+   "position": 114,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 60.247,
+   "submitted_at": "2026-07-24T20:50:22.836202Z"
+  },
+  "item_115": {
+   "position": 115,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 62.947,
+   "submitted_at": "2026-07-24T20:51:25.933310Z"
+  },
+  "item_116": {
+   "position": 116,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 79.281,
+   "submitted_at": "2026-07-24T20:52:45.401978Z"
+  },
+  "item_117": {
+   "position": 117,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 66.939,
+   "submitted_at": "2026-07-24T20:53:52.501477Z"
+  },
+  "item_118": {
+   "position": 118,
+   "label_condition": "unlabeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 76.995,
+   "submitted_at": "2026-07-24T20:55:09.671976Z"
+  },
+  "item_119": {
+   "position": 119,
+   "label_condition": "unlabeled",
+   "provenance": 2,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 107.291,
+   "submitted_at": "2026-07-24T20:56:57.127876Z"
+  },
+  "item_120": {
+   "position": 120,
+   "label_condition": "labeled",
+   "provenance": 4,
+   "basis": [
+    "argumentation_structure"
+   ],
+   "comment": null,
+   "lead_time": 75.879,
+   "submitted_at": "2026-07-24T20:58:13.183080Z"
+  }
+ }
+}

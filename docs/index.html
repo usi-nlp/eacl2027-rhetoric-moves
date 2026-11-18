@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Does AI-Generated Scientific Text Follow Human Argumentation Patterns?</title>
+  <meta name="title" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions">
+  <meta name="description" content="We compare 76 published research-article introductions with 608 LLM-generated counterparts by their rhetorical structure under Swales' CARS model. Findings of EACL 2027.">
+  <meta name="keywords" content="rhetorical structure, Swales CARS model, machine-generated text, scientific writing, research article introductions, argumentation, large language models, genre analysis">
+  <meta name="author" content="Abdelrahman Sadallah, Narjes Sheikh Asadi, Lonneke van der Plas">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6b21a8">
+  <link rel="canonical" href="https://usi-nlp.github.io/eacl2027-rhetoric-moves/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="USI NLP Lab">
+  <meta property="og:title" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns?">
+  <meta property="og:description" content="A CARS-based comparison of 76 published research-article introductions with 608 LLM-generated counterparts of the same papers. Findings of EACL 2027.">
+  <meta property="og:url" content="https://usi-nlp.github.io/eacl2027-rhetoric-moves/">
+  <meta property="og:image" content="https://usi-nlp.github.io/eacl2027-rhetoric-moves/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns? Findings of EACL 2027">
+  <meta property="article:published_time" content="2026-10-01T09:22:04Z">
+  <meta property="article:author" content="Abdelrahman Sadallah">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="rhetorical structure">
+  <meta property="article:tag" content="machine-generated text">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns?">
+  <meta name="twitter:description" content="A CARS-based comparison of 76 published research-article introductions with 608 LLM-generated counterparts. Findings of EACL 2027.">
+  <meta name="twitter:image" content="https://usi-nlp.github.io/eacl2027-rhetoric-moves/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns? Findings of EACL 2027">
+
+  <!-- Google Scholar -->
+  <meta name="citation_title" content="Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions">
+  <meta name="citation_author" content="Sadallah, Abdelrahman">
+  <meta name="citation_author" content="Sheikh Asadi, Narjes">
+  <meta name="citation_author" content="van der Plas, Lonneke">
+  <meta name="citation_publication_date" content="2026/10/01">
+  <meta name="citation_conference_title" content="Findings of the Association for Computational Linguistics: EACL 2027">
+  <meta name="citation_arxiv_id" content="2610.01353">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2610.01353">
+  <meta name="citation_abstract_html_url" content="https://arxiv.org/abs/2610.01353">
+
+  <link rel="icon" type="image/svg+xml" href="static/images/favicon.svg">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  <script defer src="static/js/page_data.js"></script>
+  <script defer src="static/js/index.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions",
+    "description": "A comparison of published research-article introductions with LLM-generated counterparts of the same papers by their rhetorical structure, under Swales' CARS model.",
+    "author": [
+      {"@type": "Person", "name": "Abdelrahman Sadallah", "url": "https://bodasadallah.github.io/",
+       "affiliation": {"@type": "Organization", "name": "Università della Svizzera italiana"}},
+      {"@type": "Person", "name": "Narjes Sheikh Asadi",
+       "affiliation": {"@type": "Organization", "name": "Università della Svizzera italiana"}},
+      {"@type": "Person", "name": "Lonneke van der Plas", "url": "https://sites.google.com/site/lonnekenlp/Home",
+       "affiliation": {"@type": "Organization", "name": "Università della Svizzera italiana"}}
+    ],
+    "datePublished": "2026-10-01",
+    "isPartOf": {"@type": "PublicationIssue", "name": "Findings of the Association for Computational Linguistics: EACL 2027"},
+    "url": "https://usi-nlp.github.io/eacl2027-rhetoric-moves/",
+    "sameAs": "https://arxiv.org/abs/2610.01353",
+    "image": "https://usi-nlp.github.io/eacl2027-rhetoric-moves/static/images/social_preview.png",
+    "keywords": ["rhetorical structure", "Swales CARS model", "machine-generated text", "scientific writing", "research article introductions"],
+    "isAccessibleForFree": true
+  }
+  </script>
+</head>
+<body>
+
+  <!-- icons (Feather, MIT licence) -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false">
+    <symbol id="i-file" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></symbol>
+    <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></symbol>
+  </svg>
+
+  <button class="scroll-to-top" type="button" title="Scroll to top" aria-label="Scroll to top">
+    <svg class="icon-svg" aria-hidden="true"><use href="#i-up"/></svg>
+  </button>
+
+  <main id="main-content">
+
+  <!-- ====================================================================== hero -->
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Does AI-Generated Scientific Text Follow Human Argumentation Patterns?</h1>
+            <p class="publication-subtitle">A CARS-Based Comparison of Research Article Introductions</p>
+
+            <div class="publication-authors">
+              <span class="author-block"><a href="https://bodasadallah.github.io/" target="_blank" rel="noopener">Abdelrahman Sadallah</a>,</span>
+              <span class="author-block">Narjes Sheikh Asadi,</span>
+              <span class="author-block"><a href="https://sites.google.com/site/lonnekenlp/Home" target="_blank" rel="noopener">Lonneke van der Plas</a></span>
+            </div>
+            <p class="publication-affiliation">
+              <a href="https://usi-nlp.github.io/" target="_blank" rel="noopener">USI NLP Lab</a>,
+              <a href="https://www.usi.ch/en" target="_blank" rel="noopener">Università della Svizzera italiana (USI)</a>
+            </p>
+            <span class="publication-venue">Findings of EACL 2027</span>
+
+            <div class="publication-links">
+              <a href="https://arxiv.org/pdf/2610.01353" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                <svg class="icon-svg" aria-hidden="true"><use href="#i-file"/></svg><span>Paper</span>
+              </a>
+              <a href="https://arxiv.org/abs/2610.01353" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                <svg class="icon-svg" aria-hidden="true"><use href="#i-book"/></svg><span>arXiv</span>
+              </a>
+              <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                <svg class="icon-svg" aria-hidden="true"><use href="#i-github"/></svg><span>Code</span>
+              </a>
+              <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/data" target="_blank" rel="noopener" class="button is-normal is-rounded is-dark">
+                <svg class="icon-svg" aria-hidden="true"><use href="#i-database"/></svg><span>Data</span>
+              </a>
+              <a href="#BibTeX" class="button is-normal is-rounded is-dark">
+                <svg class="icon-svg" aria-hidden="true"><use href="#i-bookmark"/></svg><span>BibTeX</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== teaser -->
+  <section class="section teaser">
+    <div class="container is-max-widescreen">
+      <figure class="figure-card">
+        <div class="figure-scroll">
+          <a href="static/images/framework.png" target="_blank" rel="noopener" title="Open the figure at full size">
+            <img src="static/images/framework.png" width="3200" height="1144"
+                 alt="Framework in five stages. Corpus: 76 research articles with expert CARS annotations, from which the paper body and the cited works are extracted. Prompts: a basic prompt and a CARS-guided prompt. Generation: GPT-5.5, Claude Opus 4.8, Gemma-4-31B-it and Qwen3.5-27B write 608 introductions. Annotation: a ChatGPT-based annotator, validated against human annotators, labels all introductions. Analysis: original versus generated introductions, and a manual analysis.">
+          </a>
+        </div>
+        <figcaption>
+          <strong>The framework.</strong> From each of the 76 corpus papers we reconstruct the content and the works
+          cited in the original introduction. Four LLMs write each paper's introduction under a basic and a
+          CARS-guided prompt, giving 608 generated introductions. An automatic annotator then labels all original
+          and generated introductions with CARS moves and steps, and these labels feed the comparison and the
+          manual analysis.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ================================================================== abstract -->
+  <section class="section is-soft" id="abstract">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Large language models are moving from helping write up research to helping do it, which makes it
+              important to know how the scientific text they produce differs from human writing. Work on this
+              question has stayed mostly at the surface, using lexical and stylistic cues that light paraphrasing
+              erases. We look instead at rhetorical structure, the sequence of argumentative moves through which a
+              text makes its case. We study research-article introductions under Swales' CARS model, and compare
+              original introductions from published linguistics articles with generated counterparts of the same
+              papers. We find that human-written introductions are more flexible in which moves they use and in
+              what order, while the generated ones are more uniform. Giving the models the CARS definitions makes
+              them more rigid.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================ at a glance -->
+  <section class="section" id="glance">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">At a glance</h2>
+      <div class="stat-row">
+        <div class="stat-tile">
+          <span class="stat-value">76</span>
+          <span class="stat-label">published applied-linguistics articles with expert CARS annotations</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">608</span>
+          <span class="stat-label">generated introductions: 4 LLMs, 2 prompt settings, the same 76 papers</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">92%</span>
+          <span class="stat-label">of the human step accuracy reached by the automatic CARS annotator</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">36</span>
+          <span class="stat-label">distinct move structures in the originals, against 8 to 35 in each generated set</span>
+        </div>
+        <div class="stat-tile">
+          <span class="stat-value">90%</span>
+          <span class="stat-label">of 120 blind judgements by a human reader were correct, based on structure</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================================================================== CARS model -->
+  <section class="section is-soft" id="cars">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">The CARS model</h2>
+      <p class="lead">
+        An introduction has to argue a paper into existence in a few paragraphs. Swales' Create-A-Research-Space
+        (CARS) model describes how: through three rhetorical <em>moves</em>, each realised by smaller <em>steps</em>.
+        Moves may recur, appear in any order, and not every move needs to be present.
+      </p>
+
+      <div class="move-grid">
+        <div class="move-card is-m1">
+          <span class="move-kicker">Move 1</span>
+          <h3>Establishing a territory</h3>
+          <p>The author shows that the research area matters and reviews what is known.</p>
+          <ul class="step-list">
+            <li><span class="step-chip" style="--chip: var(--m1-cc)"><abbr title="Claiming centrality">CC</abbr>Claiming centrality</span></li>
+            <li><span class="step-chip" style="--chip: var(--m1-mtg)"><abbr title="Making topic generalizations">MTG</abbr>Making topic generalizations</span></li>
+            <li><span class="step-chip" style="--chip: var(--m1-rr)"><abbr title="Reviewing items of previous research">RR</abbr>Reviewing previous research</span></li>
+          </ul>
+        </div>
+        <div class="move-card is-m2">
+          <span class="move-kicker">Move 2</span>
+          <h3>Establishing a niche</h3>
+          <p>The author opens a space for the study, most often by pointing out a gap.</p>
+          <ul class="step-list">
+            <li><span class="step-chip" style="--chip: var(--m2-gap)"><abbr title="Indicating a gap">Gap</abbr>Indicating a gap</span></li>
+            <li><span class="step-chip" style="--chip: var(--m2-qr)"><abbr title="Question raising">QR</abbr>Question raising</span></li>
+            <li><span class="step-chip" style="--chip: var(--m2-ct)"><abbr title="Continuing a tradition">CT</abbr>Continuing a tradition</span></li>
+          </ul>
+        </div>
+        <div class="move-card is-m3">
+          <span class="move-kicker">Move 3</span>
+          <h3>Occupying the niche</h3>
+          <p>The author fills that space with the present study.</p>
+          <ul class="step-list">
+            <li><span class="step-chip" style="--chip: var(--m3-apr)"><abbr title="Announcing present research">APR</abbr>Announcing present research</span></li>
+            <li><span class="step-chip" style="--chip: var(--m3-op)"><abbr title="Outlining purpose">OP</abbr>Outlining purpose</span></li>
+            <li><span class="step-chip" style="--chip: var(--m3-apf)"><abbr title="Announcing principal findings">APF</abbr>Announcing principal findings</span></li>
+            <li><span class="step-chip" style="--chip: var(--m3-is)"><abbr title="Indicating the structure of the research">IS</abbr>Indicating the structure</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="split is-wide-right" style="margin-top: 1.5rem;">
+        <div class="prose">
+          <p>
+            <strong>Why the introduction?</strong> Prior comparisons of human and machine-written text rely on
+            lexical statistics, stylistic fingerprints and syntactic patterns. Such cues say little about how a
+            model builds a text, and light paraphrasing erases most of them.
+          </p>
+          <p>
+            Rhetorical structure sits below the surface. Introductions are especially dense in rhetorical moves,
+            and the CARS model is the standard account of how they are organised. The figure shows the model at
+            work on the paper's own introduction, cut into consecutive segments that each carry one step.
+          </p>
+        </div>
+        <figure class="figure-card">
+          <img src="static/images/cars_intro.png" width="880" height="564" loading="lazy"
+               alt="The introduction of the paper, cut into consecutive segments. Each segment is highlighted in the colour of its CARS step: purple shades for Move 1, magenta for Move 2 and blue shades for Move 3.">
+          <figcaption>Hue marks the move, shade marks the step within the move.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================== method -->
+  <section class="section" id="method">
+    <div class="container is-max-desktop has-text-centered">
+      <h2 class="title is-3">How we compare</h2>
+      <p class="lead">
+        The comparison is paired: every generated introduction is written for a paper whose published
+        introduction we also have, from the same information the author had.
+      </p>
+      <div class="step-grid">
+        <div class="step-card">
+          <h3>Reconstruct the author's context</h3>
+          <p>
+            Each model receives the paper's title and body, without the introduction, and the works cited in the
+            original introduction with their metadata and abstracts. The target length is the length of the
+            original.
+          </p>
+        </div>
+        <div class="step-card">
+          <h3>Generate under two prompts</h3>
+          <p>
+            GPT-5.5, Claude Opus 4.8, Gemma-4-31B-it and Qwen3.5-27B write every introduction twice: from a
+            <em>basic</em> prompt, and from a <em>CARS-guided</em> prompt that adds the move and step definitions
+            and asks the model to plan the moves first.
+          </p>
+        </div>
+        <div class="step-card">
+          <h3>Annotate both sides alike</h3>
+          <p>
+            One automatic annotator segments and labels all 684 introductions, original and generated. Using the
+            same annotator on both sides removes the annotator as a confound.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================================================================== findings -->
+  <section class="section is-soft" id="findings">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">What we find</h2>
+
+      <!-- finding 1 ------------------------------------------------------------ -->
+      <article class="finding" id="structure">
+        <h3>Human authors vary their structure. The models repeat a few templates.</h3>
+        <p>
+          Each row below is one introduction, read from left to right, coloured by the move its text realises.
+          The 76 originals realise <strong>36 distinct move structures</strong>. Every generated set realises
+          fewer, and the CARS-guided prompt cuts the number further for all four models.
+        </p>
+
+        <div class="chart-card" id="structure-figure">
+          <div class="controls">
+            <div class="control">
+              <span id="model-label">Generator</span>
+              <div class="segmented" data-control="model" role="group" aria-labelledby="model-label"></div>
+            </div>
+            <div class="control">
+              <span id="order-label">Order rows by</span>
+              <div class="segmented" data-control="order" role="group" aria-labelledby="order-label">
+                <button type="button" data-value="structure" aria-pressed="true">Structure</button>
+                <button type="button" data-value="paper" aria-pressed="false">Paper</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="legend" aria-label="Legend">
+            <span class="legend-item"><span class="swatch is-m1"></span>Move 1: establishing a territory</span>
+            <span class="legend-item"><span class="swatch is-m2"></span>Move 2: establishing a niche</span>
+            <span class="legend-item"><span class="swatch is-m3"></span>Move 3: occupying the niche</span>
+          </div>
+
+          <div class="strip-panels">
+            <noscript>The interactive figure needs JavaScript. The numbers it shows are in the tables on this page.</noscript>
+          </div>
+
+          <p class="chart-note">
+            One row per introduction, block widths proportional to the number of words. Consecutive segments of
+            the same move are merged. With rows ordered by structure, the most frequent move sequence comes
+            first, so a repeated template shows as a block of identical rows. Hover a row, or focus a panel and
+            use the arrow keys, to read its move sequence.
+          </p>
+
+          <details class="table-view">
+            <summary>Show as table</summary>
+            <div class="table-wrap">
+              <table class="data">
+                <caption class="visually-hidden">Move sequence of every introduction in the three panels</caption>
+                <thead><tr></tr></thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+      </article>
+
+      <!-- finding 2 ------------------------------------------------------------ -->
+      <article class="finding" id="distribution">
+        <h3>The models cover the scheme. Human authors select from it.</h3>
+        <p>
+          A human introduction uses on average 2.67 of the 3 moves and 5.3 of the 10 steps, and
+          <strong>28% of the originals leave out an entire move</strong>. Most generated sets realise all three
+          moves and 6.1 to 7.4 steps. Where the original establishes no niche, states no explicit gap or never
+          claims centrality, 86 to 96% of its generated counterparts add the missing step. The balance shifts
+          accordingly, from Move 1 toward Move 2.
+        </p>
+
+        <div class="chart-card">
+          <p class="chart-title">Share of segments per move</p>
+          <p class="chart-subtitle">Percentage of all segments a source produces, pooled over its 76 introductions</p>
+          <div class="legend" aria-label="Legend">
+            <span class="legend-item"><span class="swatch is-m1"></span>Move 1</span>
+            <span class="legend-item"><span class="swatch is-m2"></span>Move 2</span>
+            <span class="legend-item"><span class="swatch is-m3"></span>Move 3</span>
+          </div>
+          <div class="table-wrap">
+            <table class="data" id="distribution-table">
+              <thead>
+                <tr><th scope="col">Source</th><th scope="col"><span class="visually-hidden">Split</span></th><th scope="col">Move 1</th><th scope="col">Move 2</th><th scope="col">Move 3</th></tr>
+              </thead>
+              <tbody>
+                <tr class="is-reference"><th scope="row">Human originals</th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 59.5%, Move 2 16.0%, Move 3 24.5%"><span class="seg is-m1" style="flex: 59.5"></span><span class="seg is-m2" style="flex: 16.0"></span><span class="seg is-m3" style="flex: 24.5"></span></div></td><td class="num">59.5</td><td class="num">16.0</td><td class="num">24.5</td></tr>
+                <tr><th scope="row">ChatGPT <span class="sub">basic</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 70.1%, Move 2 14.6%, Move 3 15.3%"><span class="seg is-m1" style="flex: 70.1"></span><span class="seg is-m2" style="flex: 14.6"></span><span class="seg is-m3" style="flex: 15.3"></span></div></td><td class="num">70.1<span class="sig">*</span></td><td class="num">14.6</td><td class="num">15.3<span class="sig">*</span></td></tr>
+                <tr><th scope="row">ChatGPT <span class="sub">CARS-guided</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 62.9%, Move 2 17.9%, Move 3 19.2%"><span class="seg is-m1" style="flex: 62.9"></span><span class="seg is-m2" style="flex: 17.9"></span><span class="seg is-m3" style="flex: 19.2"></span></div></td><td class="num">62.9</td><td class="num">17.9<span class="sig">*</span></td><td class="num">19.2<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Claude <span class="sub">basic</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 57.5%, Move 2 19.9%, Move 3 22.6%"><span class="seg is-m1" style="flex: 57.5"></span><span class="seg is-m2" style="flex: 19.9"></span><span class="seg is-m3" style="flex: 22.6"></span></div></td><td class="num">57.5</td><td class="num">19.9<span class="sig">*</span></td><td class="num">22.6</td></tr>
+                <tr><th scope="row">Claude <span class="sub">CARS-guided</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 51.1%, Move 2 22.8%, Move 3 26.1%"><span class="seg is-m1" style="flex: 51.1"></span><span class="seg is-m2" style="flex: 22.8"></span><span class="seg is-m3" style="flex: 26.1"></span></div></td><td class="num">51.1<span class="sig">*</span></td><td class="num">22.8<span class="sig">*</span></td><td class="num">26.1</td></tr>
+                <tr><th scope="row">Gemma <span class="sub">basic</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 60.6%, Move 2 21.1%, Move 3 18.3%"><span class="seg is-m1" style="flex: 60.6"></span><span class="seg is-m2" style="flex: 21.1"></span><span class="seg is-m3" style="flex: 18.3"></span></div></td><td class="num">60.6</td><td class="num">21.1<span class="sig">*</span></td><td class="num">18.3<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Gemma <span class="sub">CARS-guided</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 46.8%, Move 2 22.1%, Move 3 31.1%"><span class="seg is-m1" style="flex: 46.8"></span><span class="seg is-m2" style="flex: 22.1"></span><span class="seg is-m3" style="flex: 31.1"></span></div></td><td class="num">46.8<span class="sig">*</span></td><td class="num">22.1<span class="sig">*</span></td><td class="num">31.1<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Qwen <span class="sub">basic</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 54.4%, Move 2 22.3%, Move 3 23.2%"><span class="seg is-m1" style="flex: 54.4"></span><span class="seg is-m2" style="flex: 22.3"></span><span class="seg is-m3" style="flex: 23.2"></span></div></td><td class="num">54.4</td><td class="num">22.3<span class="sig">*</span></td><td class="num">23.2</td></tr>
+                <tr><th scope="row">Qwen <span class="sub">CARS-guided</span></th><td class="bar-cell"><div class="segbar" role="img" aria-label="Move 1 48.3%, Move 2 26.6%, Move 3 25.1%"><span class="seg is-m1" style="flex: 48.3"></span><span class="seg is-m2" style="flex: 26.6"></span><span class="seg is-m3" style="flex: 25.1"></span></div></td><td class="num">48.3<span class="sig">*</span></td><td class="num">26.6<span class="sig">*</span></td><td class="num">25.1</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">* differs significantly from the originals of the same papers (paired Wilcoxon signed-rank test, q &lt; 0.05 after FDR correction).</p>
+        </div>
+      </article>
+
+      <!-- finding 3 ------------------------------------------------------------ -->
+      <article class="finding" id="ordering">
+        <h3>The models open the same way and keep to the canonical order.</h3>
+        <p>
+          Human authors open with a centrality claim in only 46% of the papers, and another 32% open directly
+          with the literature. The models start with a centrality claim in 58 to 84% of their introductions,
+          and <strong>none of the 608 generated introductions opens on Move 3</strong>. Each model also has a
+          stronger signature sequence than the human authors, whose most frequent step 3-gram appears in only a
+          quarter of their papers.
+        </p>
+
+        <div class="chart-card">
+          <p class="chart-title">Step ordering profile</p>
+          <p class="chart-subtitle">Per source, over its 76 introductions</p>
+          <div class="table-wrap">
+            <table class="data" id="ordering-table">
+              <thead>
+                <tr>
+                  <th scope="col">Source</th>
+                  <th scope="col" class="is-text">Top step 3-gram</th>
+                  <th scope="col">In % of intros</th>
+                  <th scope="col">Cyclic %</th>
+                  <th scope="col">Distinct moves</th>
+                  <th scope="col">Distinct steps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="is-reference"><th scope="row">Human originals</th><td class="is-text">RR &rarr; MTG &rarr; RR</td><td class="num">25</td><td class="num">66</td><td class="num">2.67</td><td class="num">5.3</td></tr>
+                <tr><th scope="row">ChatGPT <span class="sub">basic</span></th><td class="is-text">CC &rarr; MTG &rarr; RR</td><td class="num">57</td><td class="num">70</td><td class="num">2.93<span class="sig">*</span></td><td class="num">6.3<span class="sig">*</span></td></tr>
+                <tr><th scope="row">ChatGPT <span class="sub">CARS-guided</span></th><td class="is-text">CC &rarr; MTG &rarr; RR</td><td class="num">61</td><td class="num">63</td><td class="num">3.00<span class="sig">*</span></td><td class="num">6.9<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Claude <span class="sub">basic</span></th><td class="is-text">RR &rarr; CC &rarr; RR</td><td class="num">33</td><td class="num">74</td><td class="num">2.95<span class="sig">*</span></td><td class="num">6.2<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Claude <span class="sub">CARS-guided</span></th><td class="is-text">CC &rarr; RR &rarr; Gap</td><td class="num">42</td><td class="num">51</td><td class="num">3.00<span class="sig">*</span></td><td class="num">6.6<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Gemma <span class="sub">basic</span></th><td class="is-text">RR &rarr; CC &rarr; RR</td><td class="num">37</td><td class="num">67</td><td class="num">2.96<span class="sig">*</span></td><td class="num">6.1<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Gemma <span class="sub">CARS-guided</span></th><td class="is-text">CC &rarr; RR &rarr; Gap</td><td class="num">37</td><td class="num">50</td><td class="num">3.00<span class="sig">*</span></td><td class="num">7.4<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Qwen <span class="sub">basic</span></th><td class="is-text">RR &rarr; Gap &rarr; RR</td><td class="num">36</td><td class="num">95<span class="sig">*</span></td><td class="num">2.97<span class="sig">*</span></td><td class="num">6.8<span class="sig">*</span></td></tr>
+                <tr><th scope="row">Qwen <span class="sub">CARS-guided</span></th><td class="is-text">CC &rarr; RR &rarr; Gap</td><td class="num">34</td><td class="num">87<span class="sig">*</span></td><td class="num">2.99<span class="sig">*</span></td><td class="num">7.0<span class="sig">*</span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">
+            Cyclic %: introductions that return to a move they had already left. Distinct moves (of 3) and
+            distinct steps (of 10): mean number one introduction draws on. * differs significantly from the
+            originals (q &lt; 0.05). Step abbreviations as in the CARS model above.
+          </p>
+        </div>
+      </article>
+
+      <!-- finding 4 ------------------------------------------------------------ -->
+      <article class="finding" id="guidance">
+        <h3>Giving the models the CARS definitions makes them more rigid.</h3>
+        <p>
+          The CARS-guided prompt lists the moves and says they may recur and appear in any order. The
+          introductions written under it nevertheless follow the canonical order more closely than the basic
+          ones. For all four models, fewer introductions return to an earlier move and fewer distinct move
+          structures appear. The guidance moves the models toward the template, not toward the human profile.
+        </p>
+
+        <div class="chart-card">
+          <p class="chart-title">Basic vs. CARS-guided prompt</p>
+          <p class="chart-subtitle">Each cell reads basic &rarr; CARS-guided, over the model's 76 introductions</p>
+          <div class="table-wrap">
+            <table class="data" id="guidance-table">
+              <thead>
+                <tr>
+                  <th scope="col">Model</th>
+                  <th scope="col" class="pair-cell">Cyclic %</th>
+                  <th scope="col" class="pair-cell">Distinct move structures</th>
+                  <th scope="col" class="pair-cell">Plain 1-2-3 order</th>
+                  <th scope="col" class="pair-cell">Self-similarity</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">ChatGPT</th><td class="pair-cell"><span class="pair"><span>70</span><span class="arrow" aria-label="to">&rarr;</span><span>63</span></span></td><td class="pair-cell"><span class="pair"><span>18</span><span class="arrow" aria-label="to">&rarr;</span><span>9</span></span></td><td class="pair-cell"><span class="pair"><span>18</span><span class="arrow" aria-label="to">&rarr;</span><span>28</span></span></td><td class="pair-cell"><span class="pair"><span>0.43</span><span class="arrow" aria-label="to">&rarr;</span><span>0.44</span></span></td></tr>
+                <tr><th scope="row">Claude</th><td class="pair-cell"><span class="pair"><span>74</span><span class="arrow" aria-label="to">&rarr;</span><span>51</span></span></td><td class="pair-cell"><span class="pair"><span>24</span><span class="arrow" aria-label="to">&rarr;</span><span>11</span></span></td><td class="pair-cell"><span class="pair"><span>16</span><span class="arrow" aria-label="to">&rarr;</span><span>37</span></span></td><td class="pair-cell"><span class="pair"><span>0.40</span><span class="arrow" aria-label="to">&rarr;</span><span>0.46</span></span></td></tr>
+                <tr><th scope="row">Gemma</th><td class="pair-cell"><span class="pair"><span>67</span><span class="arrow" aria-label="to">&rarr;</span><span>50</span></span></td><td class="pair-cell"><span class="pair"><span>14</span><span class="arrow" aria-label="to">&rarr;</span><span>8</span></span></td><td class="pair-cell"><span class="pair"><span>23</span><span class="arrow" aria-label="to">&rarr;</span><span>38</span></span></td><td class="pair-cell"><span class="pair"><span>0.40</span><span class="arrow" aria-label="to">&rarr;</span><span>0.46</span></span></td></tr>
+                <tr><th scope="row">Qwen</th><td class="pair-cell"><span class="pair"><span>95</span><span class="arrow" aria-label="to">&rarr;</span><span>87</span></span></td><td class="pair-cell"><span class="pair"><span>35</span><span class="arrow" aria-label="to">&rarr;</span><span>25</span></span></td><td class="pair-cell"><span class="pair"><span>4</span><span class="arrow" aria-label="to">&rarr;</span><span>10</span></span></td><td class="pair-cell"><span class="pair"><span>0.37</span><span class="arrow" aria-label="to">&rarr;</span><span>0.44</span></span></td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">
+            Human originals for comparison: 66% cyclic, 36 distinct move structures, 12 of 76 in plain 1-2-3
+            order, self-similarity 0.33. Cyclic %: introductions that return to a move they had already left.
+            Plain 1-2-3 order: number of the 76 introductions whose moves run 1, 2, 3 with no return.
+            Self-similarity: mean pairwise step edit similarity among a source's own introductions, higher
+            means more uniform.
+          </p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- =================================================================== annotator -->
+  <section class="section" id="annotator">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">An annotator close to the human baseline</h2>
+      <div class="split is-centered-y">
+        <div class="prose">
+          <p>
+            Expert CARS annotation is slow and hard to scale, and the study needs labels for 684 introductions.
+            We build an LLM-based annotator that partitions an introduction into segments and labels each with
+            its move and step, in one pass over the whole text.
+          </p>
+          <p>
+            Its prompt embeds the annotation manual the human annotators followed, three worked gold examples
+            and a two-step procedure: decide the move first, then the step, with a one-sentence rationale before
+            each label.
+          </p>
+          <p>
+            We validate it against a human baseline obtained under identical conditions. Two graduate-student
+            annotators labelled 32 introductions from scratch, and both the humans and the annotator are scored
+            against the expert gold. The annotator reaches <strong>92% of the human step accuracy</strong> and
+            is at the human level on moves and boundaries.
+          </p>
+        </div>
+        <div class="chart-card">
+          <p class="chart-title">Automatic annotator vs. human baseline</p>
+          <p class="chart-subtitle">Both scored against the expert gold, 32 introductions</p>
+          <div class="table-wrap">
+            <table class="data" id="validation-table">
+              <thead>
+                <tr><th scope="col">Annotator</th><th scope="col">Step acc.</th><th scope="col">Step F1</th><th scope="col">Move acc.</th><th scope="col">Boundary F1</th></tr>
+              </thead>
+              <tbody>
+                <tr class="is-reference"><th scope="row">Human baseline</th><td class="num">0.752</td><td class="num">0.699</td><td class="num">0.911</td><td class="num">0.756</td></tr>
+                <tr><th scope="row">Automatic annotator</th><td class="num">0.694</td><td class="num">0.664</td><td class="num">0.901</td><td class="num">0.725</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="chart-note">
+            Step accuracy and macro F1 are computed per sentence. Move accuracy aggregates each step to its
+            parent move. Boundary F1 uses a tolerance of 5 characters.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =================================================================== detection -->
+  <section class="section is-soft" id="detection">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Can a reader use the structure?</h2>
+      <div class="split is-centered-y">
+        <div class="prose">
+          <p>
+            A student researcher from outside the project judged 120 introductions one at a time, 60 originals
+            and 60 Claude generations of the same papers. The reader was blind to the provenance of each item and
+            had read only the CARS guidelines and a short summary of the corpus-level tendencies.
+          </p>
+          <p>
+            The reader was correct on <strong>108 of the 120</strong> introductions, and named the
+            argumentation structure as a basis for the decision on 118 of them, against the writing style on 15.
+          </p>
+          <p>
+            Introductions written with the CARS-guided prompt were the easiest to spot: all 30 were identified
+            as machine-written. Showing the automatic move annotations as highlights made no difference, since
+            the reader did the move analysis from the content either way.
+          </p>
+        </div>
+        <div class="chart-card">
+          <p class="chart-title">Correct judgements</p>
+          <p class="chart-subtitle">One blind reader, 5-point provenance scale split at its midpoint</p>
+          <div class="meter-list" id="detection-meters">
+            <div class="meter-row">
+              <span class="meter-name">All items</span>
+              <div class="meter" role="img" aria-label="108 of 120 correct"><span style="width: 90%"></span></div>
+              <span class="meter-value">108 / 120 <span class="sub">(90%)</span></span>
+            </div>
+            <div class="meter-divider">By move annotation</div>
+            <div class="meter-row">
+              <span class="meter-name">Highlights shown</span>
+              <div class="meter" role="img" aria-label="54 of 60 correct"><span style="width: 90%"></span></div>
+              <span class="meter-value">54 / 60 <span class="sub">(90%)</span></span>
+            </div>
+            <div class="meter-row">
+              <span class="meter-name">Plain text</span>
+              <div class="meter" role="img" aria-label="54 of 60 correct"><span style="width: 90%"></span></div>
+              <span class="meter-value">54 / 60 <span class="sub">(90%)</span></span>
+            </div>
+            <div class="meter-divider">Generated items, by prompt</div>
+            <div class="meter-row">
+              <span class="meter-name">Basic</span>
+              <div class="meter" role="img" aria-label="24 of 30 correct"><span style="width: 80%"></span></div>
+              <span class="meter-value">24 / 30 <span class="sub">(80%)</span></span>
+            </div>
+            <div class="meter-row">
+              <span class="meter-name">CARS-guided</span>
+              <div class="meter" role="img" aria-label="30 of 30 correct"><span style="width: 100%"></span></div>
+              <span class="meter-value">30 / 30 <span class="sub">(100%)</span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <figure class="figure-card" style="margin-top: 1.5rem;">
+        <a href="static/images/human_study_ui.png" target="_blank" rel="noopener" title="Open the figure at full size">
+          <img src="static/images/human_study_ui.png" width="2025" height="1181" loading="lazy"
+               alt="The annotation interface of the detection study: one introduction with its CARS moves as coloured highlights, above a five-point provenance question and a question about the basis of the decision.">
+        </a>
+        <figcaption>
+          The interface of the detection study. One introduction is shown at a time, here with its automatic
+          CARS annotations as highlights, above the provenance question and the basis of the decision.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- =================================================================== resources -->
+  <section class="section" id="resources">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered">Code and data</h2>
+      <div class="split">
+        <ul class="resource-list">
+          <li>
+            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/data" target="_blank" rel="noopener">Master dataset</a>
+            <p>76 papers, 684 introductions (76 original, 608 generated), with expert, second-annotator and automatic CARS annotations in one JSON file.</p>
+          </li>
+          <li>
+            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/intro_analysis" target="_blank" rel="noopener">Automatic CARS annotator</a>
+            <p>Prompts, few-shot demonstrations, a multi-provider client and the validation against the human baseline.</p>
+          </li>
+          <li>
+            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/comparative_analysis" target="_blank" rel="noopener">Analysis scripts</a>
+            <p>Every table of the paper, recomputed from the dataset without an API key or a GPU.</p>
+          </li>
+          <li>
+            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/discrimination_experiment" target="_blank" rel="noopener">Human-study materials</a>
+            <p>Design, interface, blinded responses and analysis of the detection study, and the two close-reading apps.</p>
+          </li>
+        </ul>
+        <div>
+<pre><code>import json
+
+data = json.load(open("data/master_dataset.json"))
+paper = data["papers"][0]
+
+for intro in paper["intros"]:
+    segments = intro["annotations"]["chatgpt"]["segments"]
+    moves = [seg["move"] for seg in segments]
+    print(intro["intro_id"], intro["word_count"], moves)</code></pre>
+          <p class="caption">
+            The original introductions and their gold annotations come from the corpus of
+            <a href="https://doi.org/10.63317/3cbozhs8zty6" target="_blank" rel="noopener">D'Agostino, Sheikh Asadi and Musi (LREC 2026)</a>.
+            The <a href="https://search.usi.ch/en/publications/35163" target="_blank" rel="noopener">annotation manual</a>
+            is by Narjes Sheikh Asadi.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================== BibTeX -->
+  <section class="section is-soft" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title is-4">BibTeX</h2>
+        <button class="copy-bibtex-btn" type="button" title="Copy BibTeX to clipboard">
+          <svg class="icon-svg" aria-hidden="true"><use href="#i-copy"/></svg>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <pre id="bibtex-code"><code>@misc{sadallah2026carsintroductions,
+    title         = {Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions},
+    author        = {Abdelrahman Sadallah and Narjes Sheikh Asadi and Lonneke van der Plas},
+    year          = {2026},
+    eprint        = {2610.01353},
+    archivePrefix = {arXiv},
+    primaryClass  = {cs.CL},
+    url           = {https://arxiv.org/abs/2610.01353},
+    note          = {To appear in Findings of the Association for Computational Linguistics: EACL 2027}
+}</code></pre>
+      <p class="caption">
+        <strong>Acknowledgments.</strong> We thank Anastasia Voznyuk for her contribution in annotating
+        introductions for the validation of the automatic annotator.
+      </p>
+    </div>
+  </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container is-max-desktop">
+      <div class="content">
+        <p>
+          This page was built using the
+          <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank" rel="noopener">Academic Project Page Template</a>,
+          which was adopted from the <a href="https://nerfies.github.io" target="_blank" rel="noopener">Nerfies</a> project page.
+          This website is licensed under a
+          <a rel="license noopener" href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

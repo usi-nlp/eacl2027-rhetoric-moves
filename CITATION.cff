@@ -1,0 +1,43 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions"
+type: software
+authors:
+  - given-names: Abdelrahman
+    family-names: Sadallah
+    affiliation: Università della Svizzera italiana (USI)
+  - given-names: Narjes
+    family-names: Sheikh Asadi
+    affiliation: Università della Svizzera italiana (USI)
+  - given-names: Lonneke
+    name-particle: van der
+    family-names: Plas
+    affiliation: Università della Svizzera italiana (USI)
+repository-code: "https://github.com/usi-nlp/eacl2027-rhetoric-moves"
+url: "https://usi-nlp.github.io/eacl2027-rhetoric-moves/"
+license: CC-BY-NC-SA-4.0
+keywords:
+  - rhetorical structure
+  - Swales CARS model
+  - machine-generated text
+  - scientific writing
+  - research article introductions
+preferred-citation:
+  type: article
+  title: "Does AI-Generated Scientific Text Follow Human Argumentation Patterns? A CARS-Based Comparison of Research Article Introductions"
+  authors:
+    - given-names: Abdelrahman
+      family-names: Sadallah
+    - given-names: Narjes
+      family-names: Sheikh Asadi
+    - given-names: Lonneke
+      name-particle: van der
+      family-names: Plas
+  year: 2026
+  journal: "arXiv preprint arXiv:2610.01353"
+  url: "https://arxiv.org/abs/2610.01353"
+  notes: "To appear in Findings of the Association for Computational Linguistics: EACL 2027"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.01353"
+      description: arXiv preprint

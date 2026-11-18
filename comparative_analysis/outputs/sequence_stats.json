@@ -1,0 +1,3606 @@
+{
+  "sources": {
+    "original": {
+      "n": 76,
+      "mean_move_units": 5.052631578947368,
+      "mean_cycles": 2.3815789473684212,
+      "pct_intros_with_move_cycle": 0.6578947368421053,
+      "pct_canonical": 0.34210526315789475,
+      "n_sequence_types": 36,
+      "type_token_ratio": 0.47368421052631576,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 12
+        },
+        {
+          "type": "1-3",
+          "count": 9
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 6
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 5
+        },
+        {
+          "type": "1-3-1-2-3",
+          "count": 4
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 4
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "MTG > RR",
+          "count": 57,
+          "paper_pct": 0.5
+        },
+        {
+          "ngram": "CC > RR",
+          "count": 57,
+          "paper_pct": 0.5394736842105263
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 49,
+          "paper_pct": 0.4868421052631579
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 45,
+          "paper_pct": 0.40789473684210525
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 36,
+          "paper_pct": 0.3157894736842105
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 28,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "MTG > CC",
+          "count": 24,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "Gap > OP",
+          "count": 23,
+          "paper_pct": 0.3026315789473684
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.25
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 22,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 20,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 18,
+          "paper_pct": 0.21052631578947367
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 17,
+          "paper_pct": 0.18421052631578946
+        },
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 15,
+          "paper_pct": 0.14473684210526316
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 14,
+          "paper_pct": 0.15789473684210525
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 11,
+          "paper_pct": 0.14473684210526316
+        }
+      ]
+    },
+    "gpt-5.5|basic": {
+      "n": 76,
+      "mean_move_units": 5.026315789473684,
+      "mean_cycles": 2.0921052631578947,
+      "pct_intros_with_move_cycle": 0.6973684210526315,
+      "pct_canonical": 0.3026315789473684,
+      "n_sequence_types": 18,
+      "type_token_ratio": 0.23684210526315788,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 18
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 17
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 9
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 7
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 5
+        },
+        {
+          "type": "1-3",
+          "count": 5
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "MTG > RR",
+          "count": 135,
+          "paper_pct": 0.7763157894736842
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 102,
+          "paper_pct": 0.6710526315789473
+        },
+        {
+          "ngram": "CC > RR",
+          "count": 100,
+          "paper_pct": 0.6842105263157895
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 93,
+          "paper_pct": 0.7368421052631579
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 88,
+          "paper_pct": 0.6973684210526315
+        },
+        {
+          "ngram": "MTG > CC",
+          "count": 62,
+          "paper_pct": 0.5131578947368421
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 40,
+          "paper_pct": 0.4342105263157895
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 30,
+          "paper_pct": 0.3815789473684211
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 57,
+          "paper_pct": 0.5657894736842105
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 57,
+          "paper_pct": 0.4605263157894737
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 53,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 43,
+          "paper_pct": 0.4473684210526316
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 43,
+          "paper_pct": 0.39473684210526316
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 38,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "CC > RR > MTG",
+          "count": 38,
+          "paper_pct": 0.3815789473684211
+        },
+        {
+          "ngram": "RR > MTG > CC",
+          "count": 34,
+          "paper_pct": 0.3815789473684211
+        }
+      ]
+    },
+    "gpt-5.5|cars_guided": {
+      "n": 76,
+      "mean_move_units": 4.921052631578948,
+      "mean_cycles": 1.9210526315789473,
+      "pct_intros_with_move_cycle": 0.631578947368421,
+      "pct_canonical": 0.3684210526315789,
+      "n_sequence_types": 9,
+      "type_token_ratio": 0.11842105263157894,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 28
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 15
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 12
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 8
+        },
+        {
+          "type": "1-2-1-2-1-2-1-2-3",
+          "count": 5
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 5
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "MTG > RR",
+          "count": 118,
+          "paper_pct": 0.7105263157894737
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 91,
+          "paper_pct": 0.7763157894736842
+        },
+        {
+          "ngram": "CC > RR",
+          "count": 87,
+          "paper_pct": 0.6973684210526315
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 76,
+          "paper_pct": 0.5
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 71,
+          "paper_pct": 0.5789473684210527
+        },
+        {
+          "ngram": "MTG > CC",
+          "count": 57,
+          "paper_pct": 0.5263157894736842
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 49,
+          "paper_pct": 0.5394736842105263
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 46,
+          "paper_pct": 0.5789473684210527
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 59,
+          "paper_pct": 0.6052631578947368
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 49,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 42,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 37,
+          "paper_pct": 0.39473684210526316
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 31,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "MTG > CC > RR",
+          "count": 31,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "CC > RR > MTG",
+          "count": 31,
+          "paper_pct": 0.32894736842105265
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 29,
+          "paper_pct": 0.3157894736842105
+        }
+      ]
+    },
+    "claude-opus-4-8|basic": {
+      "n": 76,
+      "mean_move_units": 5.4868421052631575,
+      "mean_cycles": 2.539473684210526,
+      "pct_intros_with_move_cycle": 0.7368421052631579,
+      "pct_canonical": 0.2631578947368421,
+      "n_sequence_types": 24,
+      "type_token_ratio": 0.3157894736842105,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 16
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 15
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 7
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 7
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 6
+        },
+        {
+          "type": "1-3",
+          "count": 4
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "CC > RR",
+          "count": 80,
+          "paper_pct": 0.6578947368421053
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 65,
+          "paper_pct": 0.5263157894736842
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 61,
+          "paper_pct": 0.6052631578947368
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 57,
+          "paper_pct": 0.5394736842105263
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 48,
+          "paper_pct": 0.4605263157894737
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 41,
+          "paper_pct": 0.3815789473684211
+        },
+        {
+          "ngram": "APR > OP",
+          "count": 39,
+          "paper_pct": 0.4868421052631579
+        },
+        {
+          "ngram": "MTG > CC",
+          "count": 34,
+          "paper_pct": 0.35526315789473684
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "RR > CC > RR",
+          "count": 30,
+          "paper_pct": 0.32894736842105265
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 29,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 23,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 22,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 20,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "OP > APR > OP",
+          "count": 19,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 19,
+          "paper_pct": 0.21052631578947367
+        }
+      ]
+    },
+    "claude-opus-4-8|cars_guided": {
+      "n": 76,
+      "mean_move_units": 4.407894736842105,
+      "mean_cycles": 1.4078947368421053,
+      "pct_intros_with_move_cycle": 0.5131578947368421,
+      "pct_canonical": 0.4868421052631579,
+      "n_sequence_types": 11,
+      "type_token_ratio": 0.14473684210526316,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 37
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 22
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 5
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 5
+        },
+        {
+          "type": "1-2-1-3-1-2-3",
+          "count": 1
+        },
+        {
+          "type": "2-1-2-3",
+          "count": 1
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "CC > RR",
+          "count": 78,
+          "paper_pct": 0.7894736842105263
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 75,
+          "paper_pct": 0.7368421052631579
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 47,
+          "paper_pct": 0.4605263157894737
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 41,
+          "paper_pct": 0.5394736842105263
+        },
+        {
+          "ngram": "Gap > OP",
+          "count": 38,
+          "paper_pct": 0.5
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 35,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 34,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 30,
+          "paper_pct": 0.2894736842105263
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 34,
+          "paper_pct": 0.42105263157894735
+        },
+        {
+          "ngram": "RR > Gap > OP",
+          "count": 28,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 23,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "OP > APR > OP",
+          "count": 23,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 22,
+          "paper_pct": 0.25
+        },
+        {
+          "ngram": "Gap > OP > APR",
+          "count": 21,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 20,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 19,
+          "paper_pct": 0.19736842105263158
+        }
+      ]
+    },
+    "google/gemma-4-31B-it|basic": {
+      "n": 76,
+      "mean_move_units": 4.9605263157894735,
+      "mean_cycles": 2.0,
+      "pct_intros_with_move_cycle": 0.6710526315789473,
+      "pct_canonical": 0.32894736842105265,
+      "n_sequence_types": 14,
+      "type_token_ratio": 0.18421052631578946,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 23
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 17
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 10
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 7
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 6
+        },
+        {
+          "type": "1-2-1-2-1-2-1-2-3",
+          "count": 3
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "CC > RR",
+          "count": 80,
+          "paper_pct": 0.6578947368421053
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 63,
+          "paper_pct": 0.5657894736842105
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 62,
+          "paper_pct": 0.5131578947368421
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 55,
+          "paper_pct": 0.618421052631579
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 45,
+          "paper_pct": 0.4605263157894737
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 44,
+          "paper_pct": 0.40789473684210525
+        },
+        {
+          "ngram": "MTG > CC",
+          "count": 28,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "OP > APF",
+          "count": 25,
+          "paper_pct": 0.3157894736842105
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "RR > CC > RR",
+          "count": 39,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 28,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 26,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 26,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 22,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 20,
+          "paper_pct": 0.21052631578947367
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 19,
+          "paper_pct": 0.19736842105263158
+        },
+        {
+          "ngram": "CC > RR > MTG",
+          "count": 18,
+          "paper_pct": 0.21052631578947367
+        }
+      ]
+    },
+    "google/gemma-4-31B-it|cars_guided": {
+      "n": 76,
+      "mean_move_units": 4.2368421052631575,
+      "mean_cycles": 1.236842105263158,
+      "pct_intros_with_move_cycle": 0.5,
+      "pct_canonical": 0.5,
+      "n_sequence_types": 8,
+      "type_token_ratio": 0.10526315789473684,
+      "top_move_structures": [
+        {
+          "type": "1-2-3",
+          "count": 38
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 19
+        },
+        {
+          "type": "1-2-1-3",
+          "count": 9
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 3
+        },
+        {
+          "type": "1-2-1-2-1-2-1-2-1-2-3",
+          "count": 2
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 2
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "CC > RR",
+          "count": 81,
+          "paper_pct": 0.7236842105263158
+        },
+        {
+          "ngram": "RR > Gap",
+          "count": 59,
+          "paper_pct": 0.6578947368421053
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 48,
+          "paper_pct": 0.42105263157894735
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 41,
+          "paper_pct": 0.5131578947368421
+        },
+        {
+          "ngram": "APF > IS",
+          "count": 41,
+          "paper_pct": 0.5394736842105263
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 39,
+          "paper_pct": 0.3815789473684211
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 33,
+          "paper_pct": 0.39473684210526316
+        },
+        {
+          "ngram": "OP > APF",
+          "count": 33,
+          "paper_pct": 0.4342105263157895
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 26,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 23,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.2631578947368421
+        },
+        {
+          "ngram": "OP > APF > IS",
+          "count": 22,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "OP > APR > APF",
+          "count": 20,
+          "paper_pct": 0.2631578947368421
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 20,
+          "paper_pct": 0.19736842105263158
+        },
+        {
+          "ngram": "APR > APF > IS",
+          "count": 18,
+          "paper_pct": 0.23684210526315788
+        }
+      ]
+    },
+    "Qwen/Qwen3.5-27B|basic": {
+      "n": 76,
+      "mean_move_units": 7.421052631578948,
+      "mean_cycles": 4.447368421052632,
+      "pct_intros_with_move_cycle": 0.9473684210526315,
+      "pct_canonical": 0.05263157894736842,
+      "n_sequence_types": 35,
+      "type_token_ratio": 0.4605263157894737,
+      "top_move_structures": [
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 13
+        },
+        {
+          "type": "1-2-1-2-3",
+          "count": 11
+        },
+        {
+          "type": "1-2-1-2-1-2-1-3",
+          "count": 5
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 4
+        },
+        {
+          "type": "1-2-3",
+          "count": 4
+        },
+        {
+          "type": "1-2-1-2-1-2-1-2-3",
+          "count": 3
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "RR > Gap",
+          "count": 80,
+          "paper_pct": 0.7236842105263158
+        },
+        {
+          "ngram": "CC > RR",
+          "count": 73,
+          "paper_pct": 0.631578947368421
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 60,
+          "paper_pct": 0.5789473684210527
+        },
+        {
+          "ngram": "Gap > RR",
+          "count": 54,
+          "paper_pct": 0.4868421052631579
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 48,
+          "paper_pct": 0.4473684210526316
+        },
+        {
+          "ngram": "RR > CC",
+          "count": 46,
+          "paper_pct": 0.47368421052631576
+        },
+        {
+          "ngram": "CC > MTG",
+          "count": 35,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 33,
+          "paper_pct": 0.3815789473684211
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 37,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 24,
+          "paper_pct": 0.25
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 21,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "OP > APR > APF",
+          "count": 21,
+          "paper_pct": 0.2631578947368421
+        },
+        {
+          "ngram": "CC > RR > MTG",
+          "count": 19,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "RR > Gap > OP",
+          "count": 17,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "Gap > RR > Gap",
+          "count": 17,
+          "paper_pct": 0.18421052631578946
+        }
+      ]
+    },
+    "Qwen/Qwen3.5-27B|cars_guided": {
+      "n": 76,
+      "mean_move_units": 6.407894736842105,
+      "mean_cycles": 3.4210526315789473,
+      "pct_intros_with_move_cycle": 0.868421052631579,
+      "pct_canonical": 0.13157894736842105,
+      "n_sequence_types": 25,
+      "type_token_ratio": 0.32894736842105265,
+      "top_move_structures": [
+        {
+          "type": "1-2-1-2-3",
+          "count": 22
+        },
+        {
+          "type": "1-2-1-2-1-2-3",
+          "count": 11
+        },
+        {
+          "type": "1-2-3",
+          "count": 10
+        },
+        {
+          "type": "1-2-1-2-1-2-1-2-3",
+          "count": 6
+        },
+        {
+          "type": "1-2-1-2-1-2-1-3",
+          "count": 5
+        },
+        {
+          "type": "1-2-1-2-1-3",
+          "count": 3
+        }
+      ],
+      "top_bigrams": [
+        {
+          "ngram": "RR > Gap",
+          "count": 90,
+          "paper_pct": 0.8026315789473685
+        },
+        {
+          "ngram": "CC > RR",
+          "count": 66,
+          "paper_pct": 0.6447368421052632
+        },
+        {
+          "ngram": "MTG > RR",
+          "count": 48,
+          "paper_pct": 0.47368421052631576
+        },
+        {
+          "ngram": "Gap > RR",
+          "count": 46,
+          "paper_pct": 0.4868421052631579
+        },
+        {
+          "ngram": "OP > APR",
+          "count": 41,
+          "paper_pct": 0.5
+        },
+        {
+          "ngram": "OP > APF",
+          "count": 40,
+          "paper_pct": 0.5
+        },
+        {
+          "ngram": "RR > MTG",
+          "count": 37,
+          "paper_pct": 0.3815789473684211
+        },
+        {
+          "ngram": "Gap > OP",
+          "count": 35,
+          "paper_pct": 0.4605263157894737
+        }
+      ],
+      "top_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 27,
+          "paper_pct": 0.3157894736842105
+        },
+        {
+          "ngram": "Gap > RR > Gap",
+          "count": 25,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "OP > APR > APF",
+          "count": 23,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > Gap > OP",
+          "count": 21,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "MTG > RR > Gap",
+          "count": 19,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 19,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 17,
+          "paper_pct": 0.19736842105263158
+        }
+      ]
+    }
+  },
+  "submoves": {
+    "original": {
+      "n": 76,
+      "mean_unique_moves": 2.6710526315789473,
+      "mean_unique_substeps": 5.302631578947368,
+      "pct_intros_all_three_moves": 0.7236842105263158,
+      "pct_intros_with_substep_cycle": 0.9342105263157895,
+      "pct_return_transitions": 0.49065420560747663,
+      "pct_within_move_transitions": 0.5202492211838006,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.25
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 22,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 20,
+          "paper_pct": 0.2236842105263158
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 18,
+          "paper_pct": 0.21052631578947367
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 17,
+          "paper_pct": 0.18421052631578946
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 35,
+          "pct": 0.4605263157894737
+        },
+        {
+          "substep": "RR",
+          "count": 24,
+          "pct": 0.3157894736842105
+        },
+        {
+          "substep": "MTG",
+          "count": 12,
+          "pct": 0.15789473684210525
+        },
+        {
+          "substep": "OP",
+          "count": 2,
+          "pct": 0.02631578947368421
+        },
+        {
+          "substep": "Gap",
+          "count": 2,
+          "pct": 0.02631578947368421
+        }
+      ]
+    },
+    "gpt-5.5|basic": {
+      "n": 76,
+      "mean_unique_moves": 2.9342105263157894,
+      "mean_unique_substeps": 6.25,
+      "pct_intros_all_three_moves": 0.9342105263157895,
+      "pct_intros_with_substep_cycle": 1.0,
+      "pct_return_transitions": 0.5928571428571429,
+      "pct_within_move_transitions": 0.6877551020408164,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 57,
+          "paper_pct": 0.5657894736842105
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 57,
+          "paper_pct": 0.4605263157894737
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 53,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 43,
+          "paper_pct": 0.4473684210526316
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 43,
+          "paper_pct": 0.39473684210526316
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 52,
+          "pct": 0.6842105263157895
+        },
+        {
+          "substep": "MTG",
+          "count": 21,
+          "pct": 0.27631578947368424
+        },
+        {
+          "substep": "QR",
+          "count": 1,
+          "pct": 0.013157894736842105
+        },
+        {
+          "substep": "Gap",
+          "count": 1,
+          "pct": 0.013157894736842105
+        },
+        {
+          "substep": "RR",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "gpt-5.5|cars_guided": {
+      "n": 76,
+      "mean_unique_moves": 3.0,
+      "mean_unique_substeps": 6.921052631578948,
+      "pct_intros_all_three_moves": 1.0,
+      "pct_intros_with_substep_cycle": 0.9605263157894737,
+      "pct_return_transitions": 0.5341614906832298,
+      "pct_within_move_transitions": 0.6915113871635611,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 59,
+          "paper_pct": 0.6052631578947368
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 49,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "MTG > RR > MTG",
+          "count": 42,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "MTG > RR > CC",
+          "count": 37,
+          "paper_pct": 0.39473684210526316
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 31,
+          "paper_pct": 0.2894736842105263
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 58,
+          "pct": 0.7631578947368421
+        },
+        {
+          "substep": "MTG",
+          "count": 17,
+          "pct": 0.2236842105263158
+        },
+        {
+          "substep": "Gap",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "claude-opus-4-8|basic": {
+      "n": 76,
+      "mean_unique_moves": 2.9473684210526314,
+      "mean_unique_substeps": 6.2368421052631575,
+      "pct_intros_all_three_moves": 0.9473684210526315,
+      "pct_intros_with_substep_cycle": 0.9342105263157895,
+      "pct_return_transitions": 0.49810844892812106,
+      "pct_within_move_transitions": 0.5699873896595208,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "RR > CC > RR",
+          "count": 30,
+          "paper_pct": 0.32894736842105265
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 29,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 23,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 22,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.23684210526315788
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 52,
+          "pct": 0.6842105263157895
+        },
+        {
+          "substep": "MTG",
+          "count": 15,
+          "pct": 0.19736842105263158
+        },
+        {
+          "substep": "RR",
+          "count": 7,
+          "pct": 0.09210526315789473
+        },
+        {
+          "substep": "QR",
+          "count": 1,
+          "pct": 0.013157894736842105
+        },
+        {
+          "substep": "Gap",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "claude-opus-4-8|cars_guided": {
+      "n": 76,
+      "mean_unique_moves": 3.0,
+      "mean_unique_substeps": 6.578947368421052,
+      "pct_intros_all_three_moves": 1.0,
+      "pct_intros_with_substep_cycle": 0.881578947368421,
+      "pct_return_transitions": 0.37091988130563797,
+      "pct_within_move_transitions": 0.615727002967359,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 34,
+          "paper_pct": 0.42105263157894735
+        },
+        {
+          "ngram": "RR > Gap > OP",
+          "count": 28,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 23,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "OP > APR > OP",
+          "count": 23,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 22,
+          "paper_pct": 0.25
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 55,
+          "pct": 0.7236842105263158
+        },
+        {
+          "substep": "MTG",
+          "count": 17,
+          "pct": 0.2236842105263158
+        },
+        {
+          "substep": "RR",
+          "count": 2,
+          "pct": 0.02631578947368421
+        },
+        {
+          "substep": "CT",
+          "count": 1,
+          "pct": 0.013157894736842105
+        },
+        {
+          "substep": "QR",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "google/gemma-4-31B-it|basic": {
+      "n": 76,
+      "mean_unique_moves": 2.960526315789474,
+      "mean_unique_substeps": 6.131578947368421,
+      "pct_intros_all_three_moves": 0.9605263157894737,
+      "pct_intros_with_substep_cycle": 0.881578947368421,
+      "pct_return_transitions": 0.4590846047156727,
+      "pct_within_move_transitions": 0.5825242718446602,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "RR > CC > RR",
+          "count": 39,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 28,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 26,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 26,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 22,
+          "paper_pct": 0.27631578947368424
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 44,
+          "pct": 0.5789473684210527
+        },
+        {
+          "substep": "MTG",
+          "count": 22,
+          "pct": 0.2894736842105263
+        },
+        {
+          "substep": "RR",
+          "count": 9,
+          "pct": 0.11842105263157894
+        },
+        {
+          "substep": "Gap",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "google/gemma-4-31B-it|cars_guided": {
+      "n": 76,
+      "mean_unique_moves": 3.0,
+      "mean_unique_substeps": 7.355263157894737,
+      "pct_intros_all_three_moves": 1.0,
+      "pct_intros_with_substep_cycle": 0.8157894736842105,
+      "pct_return_transitions": 0.33379310344827584,
+      "pct_within_move_transitions": 0.6606896551724138,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.3684210526315789
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 26,
+          "paper_pct": 0.2894736842105263
+        },
+        {
+          "ngram": "CC > RR > CC",
+          "count": 23,
+          "paper_pct": 0.27631578947368424
+        },
+        {
+          "ngram": "CC > MTG > RR",
+          "count": 22,
+          "paper_pct": 0.2631578947368421
+        },
+        {
+          "ngram": "OP > APF > IS",
+          "count": 22,
+          "paper_pct": 0.2894736842105263
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 64,
+          "pct": 0.8421052631578947
+        },
+        {
+          "substep": "MTG",
+          "count": 9,
+          "pct": 0.11842105263157894
+        },
+        {
+          "substep": "RR",
+          "count": 2,
+          "pct": 0.02631578947368421
+        },
+        {
+          "substep": "Gap",
+          "count": 1,
+          "pct": 0.013157894736842105
+        }
+      ]
+    },
+    "Qwen/Qwen3.5-27B|basic": {
+      "n": 76,
+      "mean_unique_moves": 2.973684210526316,
+      "mean_unique_substeps": 6.802631578947368,
+      "pct_intros_all_three_moves": 0.9736842105263158,
+      "pct_intros_with_substep_cycle": 0.9736842105263158,
+      "pct_return_transitions": 0.5216919739696312,
+      "pct_within_move_transitions": 0.47071583514099785,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 37,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.35526315789473684
+        },
+        {
+          "ngram": "RR > MTG > RR",
+          "count": 24,
+          "paper_pct": 0.25
+        },
+        {
+          "ngram": "RR > CC > RR",
+          "count": 21,
+          "paper_pct": 0.23684210526315788
+        },
+        {
+          "ngram": "OP > APR > APF",
+          "count": 21,
+          "paper_pct": 0.2631578947368421
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 48,
+          "pct": 0.631578947368421
+        },
+        {
+          "substep": "MTG",
+          "count": 19,
+          "pct": 0.25
+        },
+        {
+          "substep": "RR",
+          "count": 5,
+          "pct": 0.06578947368421052
+        },
+        {
+          "substep": "Gap",
+          "count": 4,
+          "pct": 0.05263157894736842
+        }
+      ]
+    },
+    "Qwen/Qwen3.5-27B|cars_guided": {
+      "n": 76,
+      "mean_unique_moves": 2.986842105263158,
+      "mean_unique_substeps": 6.9605263157894735,
+      "pct_intros_all_three_moves": 0.9868421052631579,
+      "pct_intros_with_substep_cycle": 0.9736842105263158,
+      "pct_return_transitions": 0.4421182266009852,
+      "pct_within_move_transitions": 0.4938423645320197,
+      "top_collapsed_trigrams": [
+        {
+          "ngram": "CC > RR > Gap",
+          "count": 28,
+          "paper_pct": 0.34210526315789475
+        },
+        {
+          "ngram": "RR > Gap > RR",
+          "count": 27,
+          "paper_pct": 0.3157894736842105
+        },
+        {
+          "ngram": "Gap > RR > Gap",
+          "count": 25,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "OP > APR > APF",
+          "count": 23,
+          "paper_pct": 0.3026315789473684
+        },
+        {
+          "ngram": "RR > Gap > OP",
+          "count": 21,
+          "paper_pct": 0.27631578947368424
+        }
+      ],
+      "initial_substeps": [
+        {
+          "substep": "CC",
+          "count": 62,
+          "pct": 0.8157894736842105
+        },
+        {
+          "substep": "MTG",
+          "count": 9,
+          "pct": 0.11842105263157894
+        },
+        {
+          "substep": "RR",
+          "count": 3,
+          "pct": 0.039473684210526314
+        },
+        {
+          "substep": "Gap",
+          "count": 2,
+          "pct": 0.02631578947368421
+        }
+      ]
+    }
+  },
+  "quartiles": {
+    "Q1": {
+      "original": {
+        "n": 16,
+        "mean_move_units": 5.125,
+        "mean_cycles": 2.25,
+        "pct_intros_with_move_cycle": 0.75,
+        "pct_canonical": 0.25,
+        "n_sequence_types": 11,
+        "type_token_ratio": 0.6875,
+        "top_move_structures": [
+          {
+            "type": "1-2-1-3",
+            "count": 3
+          },
+          {
+            "type": "1-2-3",
+            "count": 3
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 2
+          },
+          {
+            "type": "1-2-1-3-1-3-1",
+            "count": 1
+          },
+          {
+            "type": "1-3",
+            "count": 1
+          },
+          {
+            "type": "2-1-2-3",
+            "count": 1
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "RR > Gap",
+            "count": 11,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 8,
+            "paper_pct": 0.375
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 7,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 7,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 6,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 5,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "Gap > CC",
+            "count": 4,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 4,
+            "paper_pct": 0.25
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 5,
+            "paper_pct": 0.1875
+          },
+          {
+            "ngram": "RR > Gap > CC",
+            "count": 4,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 4,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 4,
+            "paper_pct": 0.1875
+          },
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 3,
+            "paper_pct": 0.1875
+          },
+          {
+            "ngram": "Gap > CC > RR",
+            "count": 2,
+            "paper_pct": 0.125
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 2,
+            "paper_pct": 0.125
+          },
+          {
+            "ngram": "QR > OP > APR",
+            "count": 2,
+            "paper_pct": 0.125
+          }
+        ]
+      },
+      "generated_all": {
+        "n": 128,
+        "mean_move_units": 5.390625,
+        "mean_cycles": 2.3984375,
+        "pct_intros_with_move_cycle": 0.734375,
+        "pct_canonical": 0.265625,
+        "n_sequence_types": 25,
+        "type_token_ratio": 0.1953125,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 34
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 28
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 14
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 12
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 7
+          },
+          {
+            "type": "2-1-2-3",
+            "count": 5
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "RR > Gap",
+            "count": 116,
+            "paper_pct": 0.6953125
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 103,
+            "paper_pct": 0.5859375
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 77,
+            "paper_pct": 0.4140625
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 59,
+            "paper_pct": 0.328125
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 54,
+            "paper_pct": 0.328125
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 51,
+            "paper_pct": 0.390625
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 46,
+            "paper_pct": 0.328125
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 43,
+            "paper_pct": 0.28125
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 46,
+            "paper_pct": 0.34375
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 33,
+            "paper_pct": 0.2578125
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 29,
+            "paper_pct": 0.1796875
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 27,
+            "paper_pct": 0.203125
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 25,
+            "paper_pct": 0.1875
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 25,
+            "paper_pct": 0.171875
+          },
+          {
+            "ngram": "OP > APR > OP",
+            "count": 22,
+            "paper_pct": 0.171875
+          },
+          {
+            "ngram": "MTG > RR > Gap",
+            "count": 22,
+            "paper_pct": 0.171875
+          }
+        ]
+      },
+      "generated_ttr_per_set_mean": 0.5078125,
+      "generated_basic": {
+        "n": 64,
+        "mean_move_units": 5.75,
+        "mean_cycles": 2.75,
+        "pct_intros_with_move_cycle": 0.828125,
+        "pct_canonical": 0.171875,
+        "n_sequence_types": 20,
+        "type_token_ratio": 0.3125,
+        "top_move_structures": [
+          {
+            "type": "1-2-1-2-3",
+            "count": 14
+          },
+          {
+            "type": "1-2-3",
+            "count": 11
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 10
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 5
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 5
+          },
+          {
+            "type": "2-1-2-1-2-3",
+            "count": 4
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "RR > Gap",
+            "count": 60,
+            "paper_pct": 0.71875
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 53,
+            "paper_pct": 0.515625
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 49,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 36,
+            "paper_pct": 0.4375
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 36,
+            "paper_pct": 0.359375
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 24,
+            "paper_pct": 0.34375
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 24,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 23,
+            "paper_pct": 0.34375
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 25,
+            "paper_pct": 0.359375
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 18,
+            "paper_pct": 0.21875
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 16,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 15,
+            "paper_pct": 0.203125
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 14,
+            "paper_pct": 0.203125
+          },
+          {
+            "ngram": "MTG > RR > Gap",
+            "count": 14,
+            "paper_pct": 0.21875
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 14,
+            "paper_pct": 0.140625
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 13,
+            "paper_pct": 0.1875
+          }
+        ]
+      },
+      "generated_cars": {
+        "n": 64,
+        "mean_move_units": 5.03125,
+        "mean_cycles": 2.046875,
+        "pct_intros_with_move_cycle": 0.640625,
+        "pct_canonical": 0.359375,
+        "n_sequence_types": 14,
+        "type_token_ratio": 0.21875,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 23
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 14
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 9
+          },
+          {
+            "type": "2-1-2-3",
+            "count": 4
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 3
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 2
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "RR > Gap",
+            "count": 56,
+            "paper_pct": 0.671875
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 50,
+            "paper_pct": 0.65625
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 28,
+            "paper_pct": 0.4375
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 28,
+            "paper_pct": 0.328125
+          },
+          {
+            "ngram": "OP > APF",
+            "count": 25,
+            "paper_pct": 0.390625
+          },
+          {
+            "ngram": "APR > OP",
+            "count": 24,
+            "paper_pct": 0.375
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 23,
+            "paper_pct": 0.296875
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 22,
+            "paper_pct": 0.3125
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 21,
+            "paper_pct": 0.328125
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 17,
+            "paper_pct": 0.265625
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 14,
+            "paper_pct": 0.21875
+          },
+          {
+            "ngram": "OP > APR > OP",
+            "count": 14,
+            "paper_pct": 0.21875
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 11,
+            "paper_pct": 0.171875
+          },
+          {
+            "ngram": "Gap > OP > APF",
+            "count": 11,
+            "paper_pct": 0.171875
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 11,
+            "paper_pct": 0.15625
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 11,
+            "paper_pct": 0.140625
+          }
+        ]
+      }
+    },
+    "Q2": {
+      "original": {
+        "n": 20,
+        "mean_move_units": 6.15,
+        "mean_cycles": 3.5,
+        "pct_intros_with_move_cycle": 0.7,
+        "pct_canonical": 0.3,
+        "n_sequence_types": 14,
+        "type_token_ratio": 0.7,
+        "top_move_structures": [
+          {
+            "type": "1-3",
+            "count": 2
+          },
+          {
+            "type": "1-2-3",
+            "count": 2
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 2
+          },
+          {
+            "type": "1-3-1-2-3",
+            "count": 2
+          },
+          {
+            "type": "1",
+            "count": 2
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 2
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "MTG > RR",
+            "count": 20,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 18,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 16,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 16,
+            "paper_pct": 0.55
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 15,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 11,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 11,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 9,
+            "paper_pct": 0.45
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 9,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 8,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 7,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 7,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 7,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 6,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "RR > CC > Gap",
+            "count": 6,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "RR > APR > RR",
+            "count": 5,
+            "paper_pct": 0.25
+          }
+        ]
+      },
+      "generated_all": {
+        "n": 160,
+        "mean_move_units": 5.525,
+        "mean_cycles": 2.55625,
+        "pct_intros_with_move_cycle": 0.74375,
+        "pct_canonical": 0.25625,
+        "n_sequence_types": 27,
+        "type_token_ratio": 0.16875,
+        "top_move_structures": [
+          {
+            "type": "1-2-1-2-3",
+            "count": 39
+          },
+          {
+            "type": "1-2-3",
+            "count": 38
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 14
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 14
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 11
+          },
+          {
+            "type": "1-2-1-2-1-2-1-3",
+            "count": 10
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 219,
+            "paper_pct": 0.775
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 207,
+            "paper_pct": 0.66875
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 167,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 158,
+            "paper_pct": 0.59375
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 146,
+            "paper_pct": 0.575
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 118,
+            "paper_pct": 0.58125
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 103,
+            "paper_pct": 0.61875
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 101,
+            "paper_pct": 0.4375
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 93,
+            "paper_pct": 0.38125
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 92,
+            "paper_pct": 0.40625
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 89,
+            "paper_pct": 0.43125
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 86,
+            "paper_pct": 0.39375
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 83,
+            "paper_pct": 0.34375
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 60,
+            "paper_pct": 0.29375
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 59,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "OP > APR > OP",
+            "count": 53,
+            "paper_pct": 0.31875
+          }
+        ]
+      },
+      "generated_ttr_per_set_mean": 0.44375,
+      "generated_basic": {
+        "n": 80,
+        "mean_move_units": 5.8625,
+        "mean_cycles": 2.925,
+        "pct_intros_with_move_cycle": 0.8125,
+        "pct_canonical": 0.1875,
+        "n_sequence_types": 23,
+        "type_token_ratio": 0.2875,
+        "top_move_structures": [
+          {
+            "type": "1-2-1-2-3",
+            "count": 17
+          },
+          {
+            "type": "1-2-3",
+            "count": 12
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 8
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 8
+          },
+          {
+            "type": "1-2-1-2-1-2-1-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 5
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 110,
+            "paper_pct": 0.7375
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 104,
+            "paper_pct": 0.675
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 90,
+            "paper_pct": 0.6375
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 85,
+            "paper_pct": 0.625
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 81,
+            "paper_pct": 0.5875
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 63,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 50,
+            "paper_pct": 0.4875
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 41,
+            "paper_pct": 0.4875
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > CC > RR",
+            "count": 48,
+            "paper_pct": 0.4125
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 46,
+            "paper_pct": 0.375
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 45,
+            "paper_pct": 0.4375
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 45,
+            "paper_pct": 0.3875
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 43,
+            "paper_pct": 0.3375
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 30,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 30,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "CC > MTG > CC",
+            "count": 27,
+            "paper_pct": 0.25
+          }
+        ]
+      },
+      "generated_cars": {
+        "n": 80,
+        "mean_move_units": 5.1875,
+        "mean_cycles": 2.1875,
+        "pct_intros_with_move_cycle": 0.675,
+        "pct_canonical": 0.325,
+        "n_sequence_types": 12,
+        "type_token_ratio": 0.15,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 26
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 22
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 5
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 109,
+            "paper_pct": 0.8125
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 103,
+            "paper_pct": 0.6625
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 77,
+            "paper_pct": 0.5625
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 73,
+            "paper_pct": 0.5625
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 68,
+            "paper_pct": 0.675
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 65,
+            "paper_pct": 0.5625
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 62,
+            "paper_pct": 0.75
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 38,
+            "paper_pct": 0.375
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 50,
+            "paper_pct": 0.425
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 44,
+            "paper_pct": 0.425
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 44,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 41,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 37,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 30,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 29,
+            "paper_pct": 0.3375
+          },
+          {
+            "ngram": "OP > APR > OP",
+            "count": 29,
+            "paper_pct": 0.35
+          }
+        ]
+      }
+    },
+    "Q3": {
+      "original": {
+        "n": 20,
+        "mean_move_units": 4.35,
+        "mean_cycles": 1.85,
+        "pct_intros_with_move_cycle": 0.55,
+        "pct_canonical": 0.45,
+        "n_sequence_types": 13,
+        "type_token_ratio": 0.65,
+        "top_move_structures": [
+          {
+            "type": "1-3",
+            "count": 5
+          },
+          {
+            "type": "1-2-3",
+            "count": 3
+          },
+          {
+            "type": "1-3-1-3",
+            "count": 2
+          },
+          {
+            "type": "1-3-1-2-3",
+            "count": 1
+          },
+          {
+            "type": "1-2-1-3-2-3-2-3",
+            "count": 1
+          },
+          {
+            "type": "1-3-2-3",
+            "count": 1
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 17,
+            "paper_pct": 0.7
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 16,
+            "paper_pct": 0.45
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 13,
+            "paper_pct": 0.45
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 10,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 7,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "APR > OP",
+            "count": 7,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "RR > OP",
+            "count": 6,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 5,
+            "paper_pct": 0.25
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 9,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 6,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 5,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 5,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 5,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "RR > OP > APR",
+            "count": 4,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "MTG > CC > RR",
+            "count": 4,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "MTG > RR > OP",
+            "count": 3,
+            "paper_pct": 0.15
+          }
+        ]
+      },
+      "generated_all": {
+        "n": 160,
+        "mean_move_units": 5.4,
+        "mean_cycles": 2.43125,
+        "pct_intros_with_move_cycle": 0.65625,
+        "pct_canonical": 0.34375,
+        "n_sequence_types": 28,
+        "type_token_ratio": 0.175,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 51
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 30
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 18
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 13
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 13
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 6
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 165,
+            "paper_pct": 0.65
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 142,
+            "paper_pct": 0.55
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 131,
+            "paper_pct": 0.625
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 102,
+            "paper_pct": 0.40625
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 98,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 88,
+            "paper_pct": 0.325
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 79,
+            "paper_pct": 0.45625
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 63,
+            "paper_pct": 0.325
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > CC > RR",
+            "count": 59,
+            "paper_pct": 0.275
+          },
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 56,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 56,
+            "paper_pct": 0.30625
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 51,
+            "paper_pct": 0.23125
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 47,
+            "paper_pct": 0.20625
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 47,
+            "paper_pct": 0.25625
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 40,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 38,
+            "paper_pct": 0.1875
+          }
+        ]
+      },
+      "generated_ttr_per_set_mean": 0.42500000000000004,
+      "generated_basic": {
+        "n": 80,
+        "mean_move_units": 5.8,
+        "mean_cycles": 2.8625,
+        "pct_intros_with_move_cycle": 0.725,
+        "pct_canonical": 0.275,
+        "n_sequence_types": 25,
+        "type_token_ratio": 0.3125,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 18
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 11
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 9
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 8
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 8
+          },
+          {
+            "type": "1-3",
+            "count": 4
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 93,
+            "paper_pct": 0.675
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 80,
+            "paper_pct": 0.575
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 64,
+            "paper_pct": 0.4625
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 63,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 55,
+            "paper_pct": 0.425
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 45,
+            "paper_pct": 0.4375
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 33,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 33,
+            "paper_pct": 0.3625
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "RR > CC > RR",
+            "count": 39,
+            "paper_pct": 0.325
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 32,
+            "paper_pct": 0.3125
+          },
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 27,
+            "paper_pct": 0.3375
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 27,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 26,
+            "paper_pct": 0.2625
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 26,
+            "paper_pct": 0.275
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 24,
+            "paper_pct": 0.2125
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 23,
+            "paper_pct": 0.2375
+          }
+        ]
+      },
+      "generated_cars": {
+        "n": 80,
+        "mean_move_units": 5.0,
+        "mean_cycles": 2.0,
+        "pct_intros_with_move_cycle": 0.5875,
+        "pct_canonical": 0.4125,
+        "n_sequence_types": 10,
+        "type_token_ratio": 0.125,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 33
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 19
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 10
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 5
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 4
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 4
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 72,
+            "paper_pct": 0.625
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 68,
+            "paper_pct": 0.65
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 62,
+            "paper_pct": 0.525
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 53,
+            "paper_pct": 0.5625
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 46,
+            "paper_pct": 0.55
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 38,
+            "paper_pct": 0.35
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 33,
+            "paper_pct": 0.225
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 30,
+            "paper_pct": 0.3
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 33,
+            "paper_pct": 0.375
+          },
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 29,
+            "paper_pct": 0.3625
+          },
+          {
+            "ngram": "OP > APR > APF",
+            "count": 22,
+            "paper_pct": 0.275
+          },
+          {
+            "ngram": "OP > APR > OP",
+            "count": 21,
+            "paper_pct": 0.2625
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 21,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 20,
+            "paper_pct": 0.225
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 20,
+            "paper_pct": 0.2125
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 19,
+            "paper_pct": 0.1875
+          }
+        ]
+      }
+    },
+    "Q4": {
+      "original": {
+        "n": 20,
+        "mean_move_units": 4.6,
+        "mean_cycles": 1.9,
+        "pct_intros_with_move_cycle": 0.65,
+        "pct_canonical": 0.35,
+        "n_sequence_types": 14,
+        "type_token_ratio": 0.7,
+        "top_move_structures": [
+          {
+            "type": "1-2-1-2-3",
+            "count": 4
+          },
+          {
+            "type": "1-2-3",
+            "count": 4
+          },
+          {
+            "type": "3-1-3-1-3-2-3",
+            "count": 1
+          },
+          {
+            "type": "1-2-1-2-3-1-2-3",
+            "count": 1
+          },
+          {
+            "type": "1-2-3-2-1-2-1",
+            "count": 1
+          },
+          {
+            "type": "1-2",
+            "count": 1
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "MTG > RR",
+            "count": 16,
+            "paper_pct": 0.65
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 16,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 14,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 13,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 8,
+            "paper_pct": 0.4
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 8,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 7,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 7,
+            "paper_pct": 0.3
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > RR > CC",
+            "count": 6,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 5,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 5,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 5,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 5,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 4,
+            "paper_pct": 0.2
+          },
+          {
+            "ngram": "RR > MTG > CC",
+            "count": 4,
+            "paper_pct": 0.15
+          },
+          {
+            "ngram": "MTG > CC > RR",
+            "count": 4,
+            "paper_pct": 0.15
+          }
+        ]
+      },
+      "generated_all": {
+        "n": 160,
+        "mean_move_units": 5.125,
+        "mean_cycles": 2.15,
+        "pct_intros_with_move_cycle": 0.65625,
+        "pct_canonical": 0.34375,
+        "n_sequence_types": 24,
+        "type_token_ratio": 0.15,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 51
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 41
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 12
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 11
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 9
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 7
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "MTG > RR",
+            "count": 158,
+            "paper_pct": 0.59375
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 158,
+            "paper_pct": 0.7125
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 144,
+            "paper_pct": 0.66875
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 114,
+            "paper_pct": 0.5125
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 108,
+            "paper_pct": 0.55625
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 103,
+            "paper_pct": 0.43125
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 72,
+            "paper_pct": 0.325
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 71,
+            "paper_pct": 0.44375
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 63,
+            "paper_pct": 0.34375
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 58,
+            "paper_pct": 0.24375
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 53,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 50,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 49,
+            "paper_pct": 0.30625
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 49,
+            "paper_pct": 0.2375
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 45,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 44,
+            "paper_pct": 0.25625
+          }
+        ]
+      },
+      "generated_ttr_per_set_mean": 0.40625,
+      "generated_basic": {
+        "n": 80,
+        "mean_move_units": 5.4875,
+        "mean_cycles": 2.5375,
+        "pct_intros_with_move_cycle": 0.7,
+        "pct_canonical": 0.3,
+        "n_sequence_types": 19,
+        "type_token_ratio": 0.2375,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 20
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 18
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 8
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 5
+          },
+          {
+            "type": "1-3",
+            "count": 4
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "MTG > RR",
+            "count": 90,
+            "paper_pct": 0.675
+          },
+          {
+            "ngram": "CC > RR",
+            "count": 77,
+            "paper_pct": 0.675
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 68,
+            "paper_pct": 0.7
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 66,
+            "paper_pct": 0.5875
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 63,
+            "paper_pct": 0.6
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 59,
+            "paper_pct": 0.475
+          },
+          {
+            "ngram": "MTG > CC",
+            "count": 39,
+            "paper_pct": 0.3375
+          },
+          {
+            "ngram": "Gap > RR",
+            "count": 36,
+            "paper_pct": 0.2875
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 36,
+            "paper_pct": 0.3875
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 32,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 31,
+            "paper_pct": 0.3625
+          },
+          {
+            "ngram": "MTG > RR > MTG",
+            "count": 31,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "MTG > RR > CC",
+            "count": 26,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "CC > RR > CC",
+            "count": 25,
+            "paper_pct": 0.2875
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 22,
+            "paper_pct": 0.275
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 22,
+            "paper_pct": 0.2375
+          }
+        ]
+      },
+      "generated_cars": {
+        "n": 80,
+        "mean_move_units": 4.7625,
+        "mean_cycles": 1.7625,
+        "pct_intros_with_move_cycle": 0.6125,
+        "pct_canonical": 0.3875,
+        "n_sequence_types": 15,
+        "type_token_ratio": 0.1875,
+        "top_move_structures": [
+          {
+            "type": "1-2-3",
+            "count": 31
+          },
+          {
+            "type": "1-2-1-2-3",
+            "count": 23
+          },
+          {
+            "type": "1-2-1-2-1-2-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-3",
+            "count": 6
+          },
+          {
+            "type": "1-2-1-2-1-3",
+            "count": 3
+          },
+          {
+            "type": "1-2-1-2-1-2-1-2-3",
+            "count": 2
+          }
+        ],
+        "top_bigrams": [
+          {
+            "ngram": "CC > RR",
+            "count": 81,
+            "paper_pct": 0.75
+          },
+          {
+            "ngram": "RR > Gap",
+            "count": 81,
+            "paper_pct": 0.7375
+          },
+          {
+            "ngram": "MTG > RR",
+            "count": 68,
+            "paper_pct": 0.5125
+          },
+          {
+            "ngram": "CC > MTG",
+            "count": 48,
+            "paper_pct": 0.4375
+          },
+          {
+            "ngram": "RR > MTG",
+            "count": 44,
+            "paper_pct": 0.3875
+          },
+          {
+            "ngram": "OP > APR",
+            "count": 42,
+            "paper_pct": 0.5
+          },
+          {
+            "ngram": "RR > CC",
+            "count": 40,
+            "paper_pct": 0.4125
+          },
+          {
+            "ngram": "Gap > OP",
+            "count": 39,
+            "paper_pct": 0.4875
+          }
+        ],
+        "top_trigrams": [
+          {
+            "ngram": "CC > RR > Gap",
+            "count": 32,
+            "paper_pct": 0.375
+          },
+          {
+            "ngram": "RR > Gap > OP",
+            "count": 27,
+            "paper_pct": 0.3375
+          },
+          {
+            "ngram": "CC > MTG > RR",
+            "count": 27,
+            "paper_pct": 0.3
+          },
+          {
+            "ngram": "RR > MTG > RR",
+            "count": 26,
+            "paper_pct": 0.2375
+          },
+          {
+            "ngram": "MTG > RR > Gap",
+            "count": 23,
+            "paper_pct": 0.2625
+          },
+          {
+            "ngram": "RR > CC > RR",
+            "count": 22,
+            "paper_pct": 0.2375
+          },
+          {
+            "ngram": "CC > RR > MTG",
+            "count": 21,
+            "paper_pct": 0.25
+          },
+          {
+            "ngram": "RR > Gap > RR",
+            "count": 20,
+            "paper_pct": 0.2
+          }
+        ]
+      }
+    }
+  },
+  "edit_distance": {
+    "gpt-5.5|basic": {
+      "mean": 0.3849571846282372,
+      "by_quartile": {
+        "Q1": 0.32837301587301587,
+        "Q2": 0.4474404761904761,
+        "Q3": 0.40232142857142855,
+        "Q4": 0.35037698412698415
+      }
+    },
+    "gpt-5.5|cars_guided": {
+      "mean": 0.39061194653299913,
+      "by_quartile": {
+        "Q1": 0.35481150793650795,
+        "Q2": 0.42670634920634926,
+        "Q3": 0.3731547619047618,
+        "Q4": 0.40061507936507945
+      }
+    },
+    "claude-opus-4-8|basic": {
+      "mean": 0.3890857315199421,
+      "by_quartile": {
+        "Q1": 0.31351686507936505,
+        "Q2": 0.3925793650793651,
+        "Q3": 0.4153601953601953,
+        "Q4": 0.4197727272727273
+      }
+    },
+    "claude-opus-4-8|cars_guided": {
+      "mean": 0.3889828738512948,
+      "by_quartile": {
+        "Q1": 0.3347718253968254,
+        "Q2": 0.44619047619047614,
+        "Q3": 0.3733531746031746,
+        "Q4": 0.3907738095238096
+      }
+    },
+    "google/gemma-4-31B-it|basic": {
+      "mean": 0.38691188197767146,
+      "by_quartile": {
+        "Q1": 0.299156746031746,
+        "Q2": 0.4316468253968254,
+        "Q3": 0.39466991341991337,
+        "Q4": 0.40462301587301586
+      }
+    },
+    "google/gemma-4-31B-it|cars_guided": {
+      "mean": 0.397984544695071,
+      "by_quartile": {
+        "Q1": 0.3842126623376623,
+        "Q2": 0.48533730158730154,
+        "Q3": 0.3236111111111111,
+        "Q4": 0.3960227272727273
+      }
+    },
+    "Qwen/Qwen3.5-27B|basic": {
+      "mean": 0.4475405807642649,
+      "by_quartile": {
+        "Q1": 0.434672619047619,
+        "Q2": 0.382979242979243,
+        "Q3": 0.49695887445887443,
+        "Q4": 0.4729779942279942
+      }
+    },
+    "Qwen/Qwen3.5-27B|cars_guided": {
+      "mean": 0.43787121139094826,
+      "by_quartile": {
+        "Q1": 0.4088203463203463,
+        "Q2": 0.44585317460317453,
+        "Q3": 0.47461226273726276,
+        "Q4": 0.416388888888889
+      }
+    }
+  }
+}
