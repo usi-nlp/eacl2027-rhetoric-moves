@@ -621,52 +621,8 @@
     </div>
   </section>
 
-  <!-- =================================================================== resources -->
-  <section class="section" id="resources">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Code and data</h2>
-      <div class="split">
-        <ul class="resource-list">
-          <li>
-            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/data" target="_blank" rel="noopener">Master dataset</a>
-            <p>76 papers, 684 introductions (76 original, 608 generated), with expert, second-annotator and automatic CARS annotations in one JSON file.</p>
-          </li>
-          <li>
-            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/intro_analysis" target="_blank" rel="noopener">Automatic CARS annotator</a>
-            <p>Prompts, few-shot demonstrations, a multi-provider client and the validation against the human baseline.</p>
-          </li>
-          <li>
-            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/comparative_analysis" target="_blank" rel="noopener">Analysis scripts</a>
-            <p>Every table of the paper, recomputed from the dataset without an API key or a GPU.</p>
-          </li>
-          <li>
-            <a href="https://github.com/usi-nlp/eacl2027-rhetoric-moves/tree/main/discrimination_experiment" target="_blank" rel="noopener">Human-study materials</a>
-            <p>Design, interface, blinded responses and analysis of the detection study, and the two close-reading apps.</p>
-          </li>
-        </ul>
-        <div>
-<pre><code>import json
-
-data = json.load(open("data/master_dataset.json"))
-paper = data["papers"][0]
-
-for intro in paper["intros"]:
-    segments = intro["annotations"]["chatgpt"]["segments"]
-    moves = [seg["move"] for seg in segments]
-    print(intro["intro_id"], intro["word_count"], moves)</code></pre>
-          <p class="caption">
-            The original introductions and their gold annotations come from the corpus of
-            <a href="https://doi.org/10.63317/3cbozhs8zty6" target="_blank" rel="noopener">D'Agostino, Sheikh Asadi and Musi (LREC 2026)</a>.
-            The <a href="https://search.usi.ch/en/publications/35163" target="_blank" rel="noopener">annotation manual</a>
-            is by Narjes Sheikh Asadi.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- ====================================================================== BibTeX -->
-  <section class="section is-soft" id="BibTeX">
+  <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <div class="bibtex-header">
         <h2 class="title is-4">BibTeX</h2>
